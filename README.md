@@ -1,54 +1,38 @@
 # HealthUp
-**Balance your life. Build yourself up.**
 
-A React + TypeScript wellness PWA with the original bamboo, dark walnut, ivory, black, and elegant italic theme. The supplied heart/up-arrow logo is reused unchanged; square install icons are raster derivatives of a padded source wrapper.
+**Balance your life. Build yourself up.** A premium local-first wellness PWA with bamboo/dark walnut surfaces, sage/aqua accents and the selected Organic Ascent logo.
 
-## What works without an account or backend
-- Personal dashboard and customizable, non-medical Balance Score.
-- Water, meals, mood, optional weight, movement, rest, intention, and reflection logging.
-- 100 complete, distinct recipes with illustrations, search, tags, favorites, serving scaling, prep checklists, and equal-weight ingredient swaps that recalculate generic estimates.
-- 100 open journey tiles, guided/My Pace/Surprise modes, and persistent completion.
-- Month/week/day calendar, mobile agenda, one-off/daily/weekly events, editing, drag-to-date, completion, per-occurrence deletion, snooze, and ICS export.
-- Text-guided meditation timers, elapsed-clock accuracy across refresh, comfortable visual breathing, optional synthetic soundscape and vibration, 70 affirmations, favorites, and scheduling.
-- Optional matching puzzle and original preference-based pause quiz.
-- Weight history and rolling average of up to seven weigh-ins, mood counts, weekly snapshots, and descriptive overlapping habit observations.
-- Eight source-linked guides and curated research notes from 2024, 2025, and 2026.
-- IndexedDB storage, data export/import/deletion, optional weight/play visibility, reminder controls, crisis resources by region, and medical disclosures.
+Public app: https://tastythaicorp.github.io/healthapp/
 
-## Local development
-`npm ci` then `npm run dev`. Vite's default base is `/healthapp/`. Open the URL with that path. `npm run build` produces `dist`. `npm test` runs the unit/content checks. `python3 tests/browser.py` runs E2E tests with Python Playwright and Chromium at `/usr/bin/chromium`; build first. Browser screenshots are internal QA artifacts.
+React + TypeScript + Vite frontend; Python + FastAPI account/content service. Public source, no embedded API keys. Core tools remain usable offline after the first online visit. Online registration, staff and payments are implemented/tested but require real production configuration before activation.
 
-## GitHub Pages
-Repository: https://github.com/TastyThaiCorp/healthapp . The workflow runs unit tests and builds/publishes `dist` after pushes to `main`. Pages must use GitHub Actions. Public repo hosting is enabled. The deployed frontend is https://tastythaicorp.github.io/healthapp/ . Hash routes do not require rewrites.
+## The experience
 
-Set the repository Actions variable `HEALTHUP_API_URL` to the generated Railway API HTTPS origin to enable live USDA/PubMed enhancements. It is a public URL, not a secret. Without it, cached results and bundled content keep the app useful. Keys never enter client JavaScript.
+Today brings together hydration, mood, meals, optional calories/weight, intentions and reflection. Food includes 100 complete illustrated recipes, ingredient swaps with recalculated generic nutrition estimates, favorites, prep mode, category/search/pantry filters and optional USDA lookup. Calendar offers month/week/day, drag dates, repeat, edit, complete, snooze, occurrence deletion, ICS export and timed routine launch. Journey has 100 open days. Mind offers text guides, timers, comfortable breathing, optional sound/haptics, 70 rotating affirmations and an optional botanical puzzle.
 
-## Railway
-Two supported deployment options:
-1. **Hybrid, lowest frontend hosting overhead:** service root `/backend`. The backend Dockerfile serves only public content/adapters. GitHub Pages serves the frontend.
-2. **Unified Railway PWA:** service root `/`. The root Dockerfile builds the frontend with base `/` and same-origin API connections, then starts FastAPI/Uvicorn. This hosts the entire app on Railway.
+The Studio release adds exact-duration adaptive activities, a popup timer, non-repeating suggestions, gentle return-day widgets, a journal/dream/gratitude book, search/tags/favorites, encrypted device storage and passphrase backups. Local check-ins suggest source-linked guides without diagnosis or sending emotions to an AI provider. Daily popups, personalization and quiet mode are user-controlled. Support provides national/global resources and immediate-danger guidance; no entries are remotely monitored and no automatic emergency calls are made.
 
-Health check: `/api/health`, returning `{"status":"ok","product":"HealthUp"}`. Both railway.json files use this endpoint. One Uvicorn worker conservatively paces NCBI requests; cached results expire after an hour and query cache is bounded.
+See [30 upgrades](UPGRADES.md), [deployment](DEPLOYMENT.md), [regulatory research and remaining legal work](COMPLIANCE.md), and [2024–2026 wellness research](RESEARCH.md).
 
-Server variables:
-- `ALLOWED_ORIGINS=https://tastythaicorp.github.io` (comma-separated explicit additional origins)
-- `USDA_API_KEY` from data.gov for production nutrient lookup. Local development can use the documented DEMO_KEY, which has stricter limits.
-- `NCBI_EMAIL` recommended for the Entrez tool registration/contact; `NCBI_API_KEY` optional.
-- `PORT` provided by Railway.
+## Privacy and accounts
 
-No database or persistent volume is required for the core release: personal health data stays browser-local. `backend/schema.sql` is a future PostgreSQL sync foundation, not an implemented cloud account or sync feature. `/api/events` returns public event types; it does not store personal events. `/api/recipes`, `/api/foods/search`, `/api/research`, `/api/content`, and `/api/health` are implemented.
+Device records use AES-GCM and a non-extractable browser-held key. Anyone controlling the unlocked browser or compromised origin code can still access records: this is not end-to-end encryption or a medical record system. Plain JSON exports contain personal information; encrypted exports use a separate passphrase that HealthUp cannot recover. Account namespaces prevent ordinary UI mixing between users.
 
-Railway Serverless is a platform setting, not a FastAPI feature. Enable and redeploy if desired; cold starts can add latency. No polling or keep-alive traffic is sent by the frontend to prevent sleep. Budget/costs depend on platform plans and usage.
+The optional account service uses verified email, Argon2id passwords, hashed single-use reset tokens, secure HttpOnly sessions, Origin/CSRF checks, rate limits, encrypted identity/consent fields, role checks and staff TOTP. Fresh logins require viewing the check-in with a private “Prefer not to say” option. Essential terms/age/wellness acknowledgements are distinct from optional cloud backup consent. Withdrawing cloud consent deletes the primary backup. Staff cannot browse private wellness entries.
 
-## Offline, privacy, and limits
-The service worker pre-caches the shell, generated bundle, 100 recipes, local content, Organic Ascent logo, icons, and nature art. Open the app online once before using it offline. Local logs survive refresh and offline use in IndexedDB. Browser storage can be cleared or evicted; export backups. Local data is not an encrypted medical record system.
+No analytics/advertising SDKs or health-data sales. Fonts and artwork are local. Optional external searches send query terms to USDA/NCBI. No clinical claims, fabricated citations, guaranteed results, or blanket liability promises. HIPAA applicability, regional obligations and operational compliance require review; no compliance certification is asserted.
 
-Browser-native notifications require permission and a supported device. Reminders reliably run only while the app is open; closed-app scheduling is not promised. The app offers in-app reminders if native notifications are unavailable. App installation depends on browser support. Optional external fonts may fall back offline.
+## Development
 
-No clinical assessments, treatment claims, AI therapy, fabricated testimonials, guaranteed weight loss, or remote emergency monitoring. The mood quiz is a personal reflection; the pause quiz is preference-based. Research design choices and limitations are documented in RESEARCH.md. Research is not evidence that HealthUp itself is clinically effective.
+```
+npm ci
+npm run dev
+npm test
+npm run build
+```
 
-## Verification
-`npm test`, `npm run build`, and `python backend/test_api.py` (with backend requirements installed) cover content, calculations, reminders/recurrence, health routes, metadata mapping, and failure handling. Browser E2E covers actual logging, recipe search/swaps/favorites/prep, journey, calendar CRUD, timers, notifications, local persistence, puzzles/quizzes, keyboard dialogs, mobile layouts, reduced motion, and offline startup.
+Vite base defaults to `/healthapp/`. `VITE_BASE_PATH=/` and `VITE_API_URL=same-origin` build the unified Railway app. The service worker caches shell, bundled content, fonts, 100 recipes and artwork; API/session responses are never cached. User logs survive refresh in encrypted IndexedDB. Browser eviction/deletion still affects records; keep exported backups.
 
-## Brand
-The selected Organic Ascent logo uses ivory lettering with sage leaves and a soft aqua upward arrow. One shared Logo component is used in landing and app navigation, loading, onboarding, installation guidance, and both footers. App icons derive from the same mark. Sage and aqua accents carry through controls and cards while retaining the bamboo and dark wood aesthetic.
+Health endpoint returns exactly `{"status":"ok","product":"HealthUp"}`. API adapters `/api/recipes`, `/api/foods/search`, `/api/research`, `/api/content`, `/api/events` preserve public content fallbacks. Personal events are device-local. Account/billing routes and production gates are documented in DEPLOYMENT.md.
+
+Production deployment needs Railway access, a persistent account volume, actual operator/contact details, transactional email and reviewed notices. Paid activation also needs Stripe test/live setup and verified webhooks. These external connections are not simulated in the public app.

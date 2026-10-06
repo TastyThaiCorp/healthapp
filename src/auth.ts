@@ -1,0 +1,13 @@
+import {useSyncExternalStore} from 'react';
+export const BACKEND=import.meta.env.VITE_API_URL==='same-origin'?location.origin:(import.meta.env.VITE_API_URL||'').replace(/\/$/,'');
+export interface AccountUser{id:string;email:string;name:string;role:string;plan:string;verified:boolean;cloud_consent:boolean;notice_ack_required:boolean}
+export interface AuthConfig{enabled:boolean;notice_version:string;company:string|null;privacy_email:string|null;regions:string[];minimum_age:number;billing_enabled:boolean;app_url?:string;secure_account_url?:string}
+let snapshot:{user:AccountUser|null;config:AuthConfig|null;loaded:boolean}={user:null,config:null,loaded:false};
+let csrf='';let started=false;const listeners=new Set<()=>void>();
+const publish=(change:Partial<typeof snapshot>)=>{snapshot={...snapshot,...change};listeners.forEach(listener=>listener())};
+export async function accountRequest(path:string,method='GET',data?:unknown){if(!BACKEND)throw new Error('The account service is not connected yet. Your local tools still work.');const response=await fetch(BACKEND+path,{method,credentials:'include',headers:{'Content-Type':'application/json',...(csrf?{'X-CSRF-Token':csrf}:{})},...(method!=='GET'?{body:JSON.stringify(data||{})}:{}),signal:AbortSignal.timeout(15000)});const result=await response.json().catch(()=>({detail:'The service returned an unexpected response.'}));if(!response.ok)throw new Error(typeof result.detail==='string'?result.detail:'Please check the entered details and try again.');return result;}
+export async function refreshAccount(){if(!started){started=true;try{const config=await accountRequest('/api/auth/config');if(config.enabled&&config.app_url&&new URL(config.app_url).origin!==location.origin){config.secure_account_url=config.app_url;config.enabled=false}publish({config});if(config.enabled)try{const result=await accountRequest('/api/auth/me');csrf=result.csrf;publish({user:result.user})}catch{publish({user:null})}}catch{publish({config:null})}finally{publish({loaded:true})}}else if(snapshot.config?.enabled){const result=await accountRequest('/api/auth/me');csrf=result.csrf;publish({user:result.user})}}
+export async function signIn(data:unknown){const result=await accountRequest('/api/auth/login','POST',data);csrf=result.csrf;publish({user:result.user});window.dispatchEvent(new CustomEvent('healthup:login',{detail:result.user}));return result;}
+export function clearAccount(){csrf='';publish({user:null})}
+export function useAuth(){return useSyncExternalStore(callback=>{listeners.add(callback);return()=>listeners.delete(callback)},()=>snapshot)}
+void refreshAccount();

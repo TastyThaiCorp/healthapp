@@ -15,8 +15,14 @@ from fastapi.staticfiles import StaticFiles
 ROOT = Path(__file__).parent
 app = FastAPI(title='HealthUp', docs_url='/api/docs', openapi_url='/api/openapi.json')
 origins = [o.strip().rstrip('/') for o in os.getenv('ALLOWED_ORIGINS', 'https://tastythaicorp.github.io').split(',') if o.strip()]
-app.add_middleware(CORSMiddleware, allow_origins=origins, allow_credentials=False,
-                   allow_methods=['GET'], allow_headers=['Accept', 'Content-Type'], max_age=600)
+app.add_middleware(CORSMiddleware, allow_origins=origins, allow_credentials=True,
+                   allow_methods=['GET','POST','DELETE','OPTIONS'], allow_headers=['Accept', 'Content-Type','X-CSRF-Token'], max_age=600)
+try:
+    from .accounts import router as accounts_router
+except ImportError:
+    from accounts import router as accounts_router
+app.include_router(accounts_router)
+
 cache: dict[str, tuple[float, Any]] = {}
 locks: dict[str, asyncio.Lock] = {}
 entrez_lock = asyncio.Lock()
@@ -25,10 +31,23 @@ entrez_next = 0.0
 
 @app.middleware('http')
 async def response_headers(request: Request, call_next):
+    if request.method in ['POST','PUT','PATCH','DELETE']:
+        length=request.headers.get('content-length')
+        if length is None:
+            return JSONResponse({'detail':'A bounded request body is required.'},411)
+        try:
+            if int(length)>2100000:return JSONResponse({'detail':'Request too large.'},413)
+        except ValueError:return JSONResponse({'detail':'Invalid request length.'},400)
     response = await call_next(request)
     response.headers['X-Content-Type-Options'] = 'nosniff'
-    response.headers['Referrer-Policy'] = 'strict-origin-when-cross-origin'
+    response.headers['Referrer-Policy'] = 'no-referrer'
     response.headers['X-Frame-Options'] = 'DENY'
+    if request.url.path.startswith('/api/'):
+        response.headers['Cache-Control']='no-store'
+    response.headers['Permissions-Policy']='camera=(), microphone=(), geolocation=()'
+    if request.url.scheme=='https' or os.getenv('RAILWAY_ENVIRONMENT_ID'):
+        response.headers['Strict-Transport-Security']='max-age=31536000'
+    response.headers['Content-Security-Policy']="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
     return response
 
 
@@ -137,6 +156,6 @@ async def research(q: str = Query(min_length=2, max_length=150)):
 async def missing(request, error):
     return JSONResponse({'detail': 'This resource was not found. HealthUp local tools remain available.'}, 404)
 
-static = ROOT.parent / 'dist'
+static = Path(os.getenv('HEALTHUP_FRONTEND_DIST',str(ROOT.parent / 'dist')))
 if static.is_dir():
     app.mount('/', StaticFiles(directory=static, html=True), name='frontend')

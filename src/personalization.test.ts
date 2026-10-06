@@ -1,0 +1,12 @@
+import {describe,it,expect} from 'vitest';
+import {choosePractice,nextFresh,careRecommendations,returningStats} from './personalization';
+import {defaultState,dateKey,shiftDate} from './logic';
+import {encryptArchive,decryptArchive} from './archive';
+describe('adaptive wellness',()=>{
+ it('matches duration and guide boundaries to the selected time',()=>{for(const minutes of [1,2,5,10,20,30]){const p=choosePractice(minutes,'mindfulness',[],()=>0);expect(p.minutes).toBe(minutes);expect(p.name).toContain(minutes+'-minute');expect(p.steps[2]).toContain(`${minutes*60} seconds`)}});
+ it('keeps category selection and avoids recently shown activities',()=>{const first=choosePractice(2,'movement',[],()=>0);const next=choosePractice(2,'movement',[first.id],()=>0);expect(next.category).toBe('movement');expect(next.id).not.toBe(first.id)});
+ it('cycles through a library before revisiting and excludes unrelated categories from history',()=>{const items=[{id:'a'},{id:'b'},{id:'c'}];expect(nextFresh(items,['a','unrelated','b'],()=>0).id).toBe('c');expect(nextFresh(items,['a','b','c'],()=>0).id).toBe('a');expect(nextFresh(items,['a','b','b'],()=>0).id).toBe('c')});
+ it('never treats check-in suggestions as diagnoses and lets users disable them',()=>{const state=defaultState();state.moods=[{id:'1',date:dateKey(),mood:0,note:''}];expect(careRecommendations(state)).toContain('selfcare');state.wellness.personalization=false;expect(careRecommendations(state)).toEqual(['habits','selfcare','hydration'])});
+ it('retains total return days when a streak has a gap',()=>{const state=defaultState();state.hydration=[{id:'1',date:dateKey(),ml:100},{id:'2',date:shiftDate(dateKey(),-2),ml:100}];expect(returningStats(state).total).toBe(2);expect(returningStats(state).consecutive).toBe(1)});
+ it('round-trips a password-protected backup and rejects the wrong password',async()=>{const state=defaultState();state.wellness.journals=[{id:'1',date:dateKey(),kind:'dream',title:'A private dream',body:'Only in this backup',tags:[],favorite:false}];const encrypted=await encryptArchive(state,'a long backup passphrase');expect(encrypted).not.toContain('Only in this backup');const restored=await decryptArchive(JSON.parse(encrypted),'a long backup passphrase');expect(restored.wellness.journals[0].body).toBe('Only in this backup');await expect(decryptArchive(JSON.parse(encrypted),'the wrong passphrase')).rejects.toThrow('could not be unlocked')});
+});

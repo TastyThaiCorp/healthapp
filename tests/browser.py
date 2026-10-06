@@ -20,7 +20,7 @@ server=ThreadingHTTPServer(('127.0.0.1',8765),Handler)
 threading.Thread(target=server.serve_forever,daemon=True).start()
 url='http://127.0.0.1:8765/healthapp/'
 def stored(page,key):
-    return page.evaluate('''async key=>{const request=indexedDB.open('healthup',1);const db=await new Promise((resolve,reject)=>{request.onsuccess=()=>resolve(request.result);request.onerror=reject});return await new Promise((resolve,reject)=>{const r=db.transaction(key).objectStore(key).get('current');r.onsuccess=()=>resolve(r.result);r.onerror=reject})}''',key)
+    return page.evaluate('''async key=>{const request=indexedDB.open('healthup');const db=await new Promise((resolve,reject)=>{request.onsuccess=()=>resolve(request.result);request.onerror=reject});const value=await new Promise((resolve,reject)=>{const r=db.transaction(key).objectStore(key).get('current');r.onsuccess=()=>resolve(r.result);r.onerror=reject});if(!value?.encrypted)return value;const deviceKey=await new Promise(resolve=>{const r=db.transaction('crypto').objectStore('crypto').get('device-key');r.onsuccess=()=>resolve(r.result)});const bytes=text=>Uint8Array.from(atob(text),c=>c.charCodeAt(0));const clear=await crypto.subtle.decrypt({name:'AES-GCM',iv:bytes(value.iv)},deviceKey,bytes(value.cipher));return JSON.parse(new TextDecoder().decode(clear))}''',key)
 def wait_stored(page,key,predicate):
     for _ in range(50):
         value=stored(page,key)
@@ -38,6 +38,8 @@ with sync_playwright() as p:
     page.screenshot(path=str(root/'tests/landing-desktop.png'),full_page=True)
     page.locator('.landing-header .button').click()
     page.get_by_label('Your name, if you’d like').fill('Alex')
+    page.get_by_label('I am 18 or older.',exact=True).check()
+    page.get_by_label('I acknowledge the wellness purpose and privacy notice; local entries are not monitored.',exact=True).check()
     page.get_by_role('button',name='Start my HealthUp').click()
     expect(page.locator('.page-heading h1')).to_contain_text('Alex')
     page.get_by_role('button',name='+ 237 ml',exact=True).click()
@@ -127,7 +129,7 @@ with sync_playwright() as p:
     page.get_by_role('button',name='Resume',exact=True).click()
     wait_stored(page,'timer',lambda x:x and x['endsAt']>0)
     # Short end-time fixture checks completion without a one-minute blocking wait.
-    page.evaluate('''async()=>{const r=indexedDB.open('healthup',1);const db=await new Promise(resolve=>r.onsuccess=()=>resolve(r.result));const tx=db.transaction('timer','readwrite');tx.objectStore('timer').put({endsAt:Date.now()+1000,duration:1,kind:'Test meditation'},'current');await new Promise(resolve=>tx.oncomplete=resolve)}''')
+    page.evaluate('''async()=>{const r=indexedDB.open('healthup');const db=await new Promise(resolve=>r.onsuccess=()=>resolve(r.result));const tx=db.transaction('timer','readwrite');tx.objectStore('timer').put({endsAt:Date.now()+1000,duration:1,kind:'Test meditation'},'current');await new Promise(resolve=>tx.oncomplete=resolve)}''')
     page.reload(wait_until='networkidle')
     wait_stored(page,'completed_tasks',lambda x:any(t['label']=='Test meditation' for t in (x or [])))
     page.get_by_role('button',name='Begin breathing',exact=True).click()
