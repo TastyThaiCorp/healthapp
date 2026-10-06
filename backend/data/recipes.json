@@ -1,0 +1,4964 @@
+{
+  "recipes": [
+    {
+      "id": "recipe-1",
+      "name": "Blueberry Balance Bowl",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Under 15 Minutes",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "yogurt",
+          "grams": 170
+        },
+        {
+          "id": "blueberry",
+          "grams": 100
+        },
+        {
+          "id": "chia",
+          "grams": 10
+        },
+        {
+          "id": "oats",
+          "grams": 20
+        }
+      ],
+      "instructions": [
+        "Wash the fruit; peel if needed and cut into bite-size pieces.",
+        "Spoon the yogurt into a bowl and stir until smooth.",
+        "Top with fruit, oats, and chia seeds. Enjoy immediately."
+      ],
+      "art": 0
+    },
+    {
+      "id": "recipe-2",
+      "name": "Raspberry Balance Bowl",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Under 15 Minutes",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "yogurt",
+          "grams": 170
+        },
+        {
+          "id": "raspberry",
+          "grams": 100
+        },
+        {
+          "id": "chia",
+          "grams": 10
+        },
+        {
+          "id": "oats",
+          "grams": 20
+        }
+      ],
+      "instructions": [
+        "Wash the fruit; peel if needed and cut into bite-size pieces.",
+        "Spoon the yogurt into a bowl and stir until smooth.",
+        "Top with fruit, oats, and chia seeds. Enjoy immediately."
+      ],
+      "art": 0
+    },
+    {
+      "id": "recipe-3",
+      "name": "Strawberry Balance Bowl",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Under 15 Minutes",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "yogurt",
+          "grams": 170
+        },
+        {
+          "id": "strawberry",
+          "grams": 100
+        },
+        {
+          "id": "chia",
+          "grams": 10
+        },
+        {
+          "id": "oats",
+          "grams": 20
+        }
+      ],
+      "instructions": [
+        "Wash the fruit; peel if needed and cut into bite-size pieces.",
+        "Spoon the yogurt into a bowl and stir until smooth.",
+        "Top with fruit, oats, and chia seeds. Enjoy immediately."
+      ],
+      "art": 0
+    },
+    {
+      "id": "recipe-4",
+      "name": "Kiwi Balance Bowl",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Under 15 Minutes",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "yogurt",
+          "grams": 170
+        },
+        {
+          "id": "kiwi",
+          "grams": 100
+        },
+        {
+          "id": "chia",
+          "grams": 10
+        },
+        {
+          "id": "oats",
+          "grams": 20
+        }
+      ],
+      "instructions": [
+        "Wash the fruit; peel if needed and cut into bite-size pieces.",
+        "Spoon the yogurt into a bowl and stir until smooth.",
+        "Top with fruit, oats, and chia seeds. Enjoy immediately."
+      ],
+      "art": 0
+    },
+    {
+      "id": "recipe-5",
+      "name": "Banana Balance Bowl",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Under 15 Minutes",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "yogurt",
+          "grams": 170
+        },
+        {
+          "id": "banana",
+          "grams": 100
+        },
+        {
+          "id": "chia",
+          "grams": 10
+        },
+        {
+          "id": "oats",
+          "grams": 20
+        }
+      ],
+      "instructions": [
+        "Wash the fruit; peel if needed and cut into bite-size pieces.",
+        "Spoon the yogurt into a bowl and stir until smooth.",
+        "Top with fruit, oats, and chia seeds. Enjoy immediately."
+      ],
+      "art": 0
+    },
+    {
+      "id": "recipe-6",
+      "name": "Mango Balance Bowl",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Under 15 Minutes",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "yogurt",
+          "grams": 170
+        },
+        {
+          "id": "mango",
+          "grams": 100
+        },
+        {
+          "id": "chia",
+          "grams": 10
+        },
+        {
+          "id": "oats",
+          "grams": 20
+        }
+      ],
+      "instructions": [
+        "Wash the fruit; peel if needed and cut into bite-size pieces.",
+        "Spoon the yogurt into a bowl and stir until smooth.",
+        "Top with fruit, oats, and chia seeds. Enjoy immediately."
+      ],
+      "art": 0
+    },
+    {
+      "id": "recipe-7",
+      "name": "Apple Balance Bowl",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Under 15 Minutes",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "yogurt",
+          "grams": 170
+        },
+        {
+          "id": "apple",
+          "grams": 100
+        },
+        {
+          "id": "chia",
+          "grams": 10
+        },
+        {
+          "id": "oats",
+          "grams": 20
+        }
+      ],
+      "instructions": [
+        "Wash the fruit; peel if needed and cut into bite-size pieces.",
+        "Spoon the yogurt into a bowl and stir until smooth.",
+        "Top with fruit, oats, and chia seeds. Enjoy immediately."
+      ],
+      "art": 0
+    },
+    {
+      "id": "recipe-8",
+      "name": "Pear Balance Bowl",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Under 15 Minutes",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "yogurt",
+          "grams": 170
+        },
+        {
+          "id": "pear",
+          "grams": 100
+        },
+        {
+          "id": "chia",
+          "grams": 10
+        },
+        {
+          "id": "oats",
+          "grams": 20
+        }
+      ],
+      "instructions": [
+        "Wash the fruit; peel if needed and cut into bite-size pieces.",
+        "Spoon the yogurt into a bowl and stir until smooth.",
+        "Top with fruit, oats, and chia seeds. Enjoy immediately."
+      ],
+      "art": 0
+    },
+    {
+      "id": "recipe-9",
+      "name": "Orange Balance Bowl",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Under 15 Minutes",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "yogurt",
+          "grams": 170
+        },
+        {
+          "id": "orange",
+          "grams": 100
+        },
+        {
+          "id": "chia",
+          "grams": 10
+        },
+        {
+          "id": "oats",
+          "grams": 20
+        }
+      ],
+      "instructions": [
+        "Wash the fruit; peel if needed and cut into bite-size pieces.",
+        "Spoon the yogurt into a bowl and stir until smooth.",
+        "Top with fruit, oats, and chia seeds. Enjoy immediately."
+      ],
+      "art": 0
+    },
+    {
+      "id": "recipe-10",
+      "name": "Peach Balance Bowl",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Under 15 Minutes",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "yogurt",
+          "grams": 170
+        },
+        {
+          "id": "peach",
+          "grams": 100
+        },
+        {
+          "id": "chia",
+          "grams": 10
+        },
+        {
+          "id": "oats",
+          "grams": 20
+        }
+      ],
+      "instructions": [
+        "Wash the fruit; peel if needed and cut into bite-size pieces.",
+        "Spoon the yogurt into a bowl and stir until smooth.",
+        "Top with fruit, oats, and chia seeds. Enjoy immediately."
+      ],
+      "art": 0
+    },
+    {
+      "id": "recipe-11",
+      "name": "Blueberry Overnight Oats",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "oats",
+          "grams": 50
+        },
+        {
+          "id": "milk",
+          "grams": 140
+        },
+        {
+          "id": "yogurt",
+          "grams": 60
+        },
+        {
+          "id": "blueberry",
+          "grams": 100
+        },
+        {
+          "id": "flax",
+          "grams": 8
+        }
+      ],
+      "instructions": [
+        "Combine oats, milk, yogurt, and ground flax in a covered jar.",
+        "Wash and chop the fruit, then fold half into the oats.",
+        "Refrigerate for at least 4 hours or overnight. Top with the remaining fruit before serving."
+      ],
+      "art": 1,
+      "rest": 240
+    },
+    {
+      "id": "recipe-12",
+      "name": "Raspberry Overnight Oats",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "oats",
+          "grams": 50
+        },
+        {
+          "id": "milk",
+          "grams": 140
+        },
+        {
+          "id": "yogurt",
+          "grams": 60
+        },
+        {
+          "id": "raspberry",
+          "grams": 100
+        },
+        {
+          "id": "flax",
+          "grams": 8
+        }
+      ],
+      "instructions": [
+        "Combine oats, milk, yogurt, and ground flax in a covered jar.",
+        "Wash and chop the fruit, then fold half into the oats.",
+        "Refrigerate for at least 4 hours or overnight. Top with the remaining fruit before serving."
+      ],
+      "art": 1,
+      "rest": 240
+    },
+    {
+      "id": "recipe-13",
+      "name": "Strawberry Overnight Oats",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "oats",
+          "grams": 50
+        },
+        {
+          "id": "milk",
+          "grams": 140
+        },
+        {
+          "id": "yogurt",
+          "grams": 60
+        },
+        {
+          "id": "strawberry",
+          "grams": 100
+        },
+        {
+          "id": "flax",
+          "grams": 8
+        }
+      ],
+      "instructions": [
+        "Combine oats, milk, yogurt, and ground flax in a covered jar.",
+        "Wash and chop the fruit, then fold half into the oats.",
+        "Refrigerate for at least 4 hours or overnight. Top with the remaining fruit before serving."
+      ],
+      "art": 1,
+      "rest": 240
+    },
+    {
+      "id": "recipe-14",
+      "name": "Kiwi Overnight Oats",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "oats",
+          "grams": 50
+        },
+        {
+          "id": "milk",
+          "grams": 140
+        },
+        {
+          "id": "yogurt",
+          "grams": 60
+        },
+        {
+          "id": "kiwi",
+          "grams": 100
+        },
+        {
+          "id": "flax",
+          "grams": 8
+        }
+      ],
+      "instructions": [
+        "Combine oats, milk, yogurt, and ground flax in a covered jar.",
+        "Wash and chop the fruit, then fold half into the oats.",
+        "Refrigerate for at least 4 hours or overnight. Top with the remaining fruit before serving."
+      ],
+      "art": 1,
+      "rest": 240
+    },
+    {
+      "id": "recipe-15",
+      "name": "Banana Overnight Oats",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "oats",
+          "grams": 50
+        },
+        {
+          "id": "milk",
+          "grams": 140
+        },
+        {
+          "id": "yogurt",
+          "grams": 60
+        },
+        {
+          "id": "banana",
+          "grams": 100
+        },
+        {
+          "id": "flax",
+          "grams": 8
+        }
+      ],
+      "instructions": [
+        "Combine oats, milk, yogurt, and ground flax in a covered jar.",
+        "Wash and chop the fruit, then fold half into the oats.",
+        "Refrigerate for at least 4 hours or overnight. Top with the remaining fruit before serving."
+      ],
+      "art": 1,
+      "rest": 240
+    },
+    {
+      "id": "recipe-16",
+      "name": "Mango Overnight Oats",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "oats",
+          "grams": 50
+        },
+        {
+          "id": "milk",
+          "grams": 140
+        },
+        {
+          "id": "yogurt",
+          "grams": 60
+        },
+        {
+          "id": "mango",
+          "grams": 100
+        },
+        {
+          "id": "flax",
+          "grams": 8
+        }
+      ],
+      "instructions": [
+        "Combine oats, milk, yogurt, and ground flax in a covered jar.",
+        "Wash and chop the fruit, then fold half into the oats.",
+        "Refrigerate for at least 4 hours or overnight. Top with the remaining fruit before serving."
+      ],
+      "art": 1,
+      "rest": 240
+    },
+    {
+      "id": "recipe-17",
+      "name": "Apple Overnight Oats",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "oats",
+          "grams": 50
+        },
+        {
+          "id": "milk",
+          "grams": 140
+        },
+        {
+          "id": "yogurt",
+          "grams": 60
+        },
+        {
+          "id": "apple",
+          "grams": 100
+        },
+        {
+          "id": "flax",
+          "grams": 8
+        }
+      ],
+      "instructions": [
+        "Combine oats, milk, yogurt, and ground flax in a covered jar.",
+        "Wash and chop the fruit, then fold half into the oats.",
+        "Refrigerate for at least 4 hours or overnight. Top with the remaining fruit before serving."
+      ],
+      "art": 1,
+      "rest": 240
+    },
+    {
+      "id": "recipe-18",
+      "name": "Pear Overnight Oats",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "oats",
+          "grams": 50
+        },
+        {
+          "id": "milk",
+          "grams": 140
+        },
+        {
+          "id": "yogurt",
+          "grams": 60
+        },
+        {
+          "id": "pear",
+          "grams": 100
+        },
+        {
+          "id": "flax",
+          "grams": 8
+        }
+      ],
+      "instructions": [
+        "Combine oats, milk, yogurt, and ground flax in a covered jar.",
+        "Wash and chop the fruit, then fold half into the oats.",
+        "Refrigerate for at least 4 hours or overnight. Top with the remaining fruit before serving."
+      ],
+      "art": 1,
+      "rest": 240
+    },
+    {
+      "id": "recipe-19",
+      "name": "Orange Overnight Oats",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "oats",
+          "grams": 50
+        },
+        {
+          "id": "milk",
+          "grams": 140
+        },
+        {
+          "id": "yogurt",
+          "grams": 60
+        },
+        {
+          "id": "orange",
+          "grams": 100
+        },
+        {
+          "id": "flax",
+          "grams": 8
+        }
+      ],
+      "instructions": [
+        "Combine oats, milk, yogurt, and ground flax in a covered jar.",
+        "Wash and chop the fruit, then fold half into the oats.",
+        "Refrigerate for at least 4 hours or overnight. Top with the remaining fruit before serving."
+      ],
+      "art": 1,
+      "rest": 240
+    },
+    {
+      "id": "recipe-20",
+      "name": "Peach Overnight Oats",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "oats",
+          "grams": 50
+        },
+        {
+          "id": "milk",
+          "grams": 140
+        },
+        {
+          "id": "yogurt",
+          "grams": 60
+        },
+        {
+          "id": "peach",
+          "grams": 100
+        },
+        {
+          "id": "flax",
+          "grams": 8
+        }
+      ],
+      "instructions": [
+        "Combine oats, milk, yogurt, and ground flax in a covered jar.",
+        "Wash and chop the fruit, then fold half into the oats.",
+        "Refrigerate for at least 4 hours or overnight. Top with the remaining fruit before serving."
+      ],
+      "art": 1,
+      "rest": 240
+    },
+    {
+      "id": "recipe-21",
+      "name": "Blueberry Morning Smoothie",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Under 15 Minutes",
+        "Plant Based",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "milk",
+          "grams": 200
+        },
+        {
+          "id": "blueberry",
+          "grams": 130
+        },
+        {
+          "id": "banana",
+          "grams": 50
+        },
+        {
+          "id": "spinach",
+          "grams": 25
+        },
+        {
+          "id": "hemp",
+          "grams": 10
+        }
+      ],
+      "instructions": [
+        "Wash the fruit and spinach. Peel fruit as needed.",
+        "Add milk, fruit, spinach, and hemp hearts to a blender.",
+        "Blend for 45\u201360 seconds until smooth. Add a splash of water if you prefer a thinner texture."
+      ],
+      "art": 2
+    },
+    {
+      "id": "recipe-22",
+      "name": "Raspberry Morning Smoothie",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Under 15 Minutes",
+        "Plant Based",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "milk",
+          "grams": 200
+        },
+        {
+          "id": "raspberry",
+          "grams": 130
+        },
+        {
+          "id": "banana",
+          "grams": 50
+        },
+        {
+          "id": "spinach",
+          "grams": 25
+        },
+        {
+          "id": "hemp",
+          "grams": 10
+        }
+      ],
+      "instructions": [
+        "Wash the fruit and spinach. Peel fruit as needed.",
+        "Add milk, fruit, spinach, and hemp hearts to a blender.",
+        "Blend for 45\u201360 seconds until smooth. Add a splash of water if you prefer a thinner texture."
+      ],
+      "art": 2
+    },
+    {
+      "id": "recipe-23",
+      "name": "Strawberry Morning Smoothie",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Under 15 Minutes",
+        "Plant Based"
+      ],
+      "ingredients": [
+        {
+          "id": "milk",
+          "grams": 200
+        },
+        {
+          "id": "strawberry",
+          "grams": 130
+        },
+        {
+          "id": "banana",
+          "grams": 50
+        },
+        {
+          "id": "spinach",
+          "grams": 25
+        },
+        {
+          "id": "hemp",
+          "grams": 10
+        }
+      ],
+      "instructions": [
+        "Wash the fruit and spinach. Peel fruit as needed.",
+        "Add milk, fruit, spinach, and hemp hearts to a blender.",
+        "Blend for 45\u201360 seconds until smooth. Add a splash of water if you prefer a thinner texture."
+      ],
+      "art": 2
+    },
+    {
+      "id": "recipe-24",
+      "name": "Kiwi Morning Smoothie",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Under 15 Minutes",
+        "Plant Based",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "milk",
+          "grams": 200
+        },
+        {
+          "id": "kiwi",
+          "grams": 130
+        },
+        {
+          "id": "banana",
+          "grams": 50
+        },
+        {
+          "id": "spinach",
+          "grams": 25
+        },
+        {
+          "id": "hemp",
+          "grams": 10
+        }
+      ],
+      "instructions": [
+        "Wash the fruit and spinach. Peel fruit as needed.",
+        "Add milk, fruit, spinach, and hemp hearts to a blender.",
+        "Blend for 45\u201360 seconds until smooth. Add a splash of water if you prefer a thinner texture."
+      ],
+      "art": 2
+    },
+    {
+      "id": "recipe-25",
+      "name": "Banana Morning Smoothie",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Under 15 Minutes",
+        "Plant Based",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "milk",
+          "grams": 200
+        },
+        {
+          "id": "banana",
+          "grams": 130
+        },
+        {
+          "id": "banana",
+          "grams": 50
+        },
+        {
+          "id": "spinach",
+          "grams": 25
+        },
+        {
+          "id": "hemp",
+          "grams": 10
+        }
+      ],
+      "instructions": [
+        "Wash the fruit and spinach. Peel fruit as needed.",
+        "Add milk, fruit, spinach, and hemp hearts to a blender.",
+        "Blend for 45\u201360 seconds until smooth. Add a splash of water if you prefer a thinner texture."
+      ],
+      "art": 2
+    },
+    {
+      "id": "recipe-26",
+      "name": "Mango Morning Smoothie",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Under 15 Minutes",
+        "Plant Based"
+      ],
+      "ingredients": [
+        {
+          "id": "milk",
+          "grams": 200
+        },
+        {
+          "id": "mango",
+          "grams": 130
+        },
+        {
+          "id": "banana",
+          "grams": 50
+        },
+        {
+          "id": "spinach",
+          "grams": 25
+        },
+        {
+          "id": "hemp",
+          "grams": 10
+        }
+      ],
+      "instructions": [
+        "Wash the fruit and spinach. Peel fruit as needed.",
+        "Add milk, fruit, spinach, and hemp hearts to a blender.",
+        "Blend for 45\u201360 seconds until smooth. Add a splash of water if you prefer a thinner texture."
+      ],
+      "art": 2
+    },
+    {
+      "id": "recipe-27",
+      "name": "Apple Morning Smoothie",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Under 15 Minutes",
+        "Plant Based",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "milk",
+          "grams": 200
+        },
+        {
+          "id": "apple",
+          "grams": 130
+        },
+        {
+          "id": "banana",
+          "grams": 50
+        },
+        {
+          "id": "spinach",
+          "grams": 25
+        },
+        {
+          "id": "hemp",
+          "grams": 10
+        }
+      ],
+      "instructions": [
+        "Wash the fruit and spinach. Peel fruit as needed.",
+        "Add milk, fruit, spinach, and hemp hearts to a blender.",
+        "Blend for 45\u201360 seconds until smooth. Add a splash of water if you prefer a thinner texture."
+      ],
+      "art": 2
+    },
+    {
+      "id": "recipe-28",
+      "name": "Pear Morning Smoothie",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Under 15 Minutes",
+        "Plant Based",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "milk",
+          "grams": 200
+        },
+        {
+          "id": "pear",
+          "grams": 130
+        },
+        {
+          "id": "banana",
+          "grams": 50
+        },
+        {
+          "id": "spinach",
+          "grams": 25
+        },
+        {
+          "id": "hemp",
+          "grams": 10
+        }
+      ],
+      "instructions": [
+        "Wash the fruit and spinach. Peel fruit as needed.",
+        "Add milk, fruit, spinach, and hemp hearts to a blender.",
+        "Blend for 45\u201360 seconds until smooth. Add a splash of water if you prefer a thinner texture."
+      ],
+      "art": 2
+    },
+    {
+      "id": "recipe-29",
+      "name": "Orange Morning Smoothie",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Under 15 Minutes",
+        "Plant Based",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "milk",
+          "grams": 200
+        },
+        {
+          "id": "orange",
+          "grams": 130
+        },
+        {
+          "id": "banana",
+          "grams": 50
+        },
+        {
+          "id": "spinach",
+          "grams": 25
+        },
+        {
+          "id": "hemp",
+          "grams": 10
+        }
+      ],
+      "instructions": [
+        "Wash the fruit and spinach. Peel fruit as needed.",
+        "Add milk, fruit, spinach, and hemp hearts to a blender.",
+        "Blend for 45\u201360 seconds until smooth. Add a splash of water if you prefer a thinner texture."
+      ],
+      "art": 2
+    },
+    {
+      "id": "recipe-30",
+      "name": "Peach Morning Smoothie",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Under 15 Minutes",
+        "Plant Based"
+      ],
+      "ingredients": [
+        {
+          "id": "milk",
+          "grams": 200
+        },
+        {
+          "id": "peach",
+          "grams": 130
+        },
+        {
+          "id": "banana",
+          "grams": 50
+        },
+        {
+          "id": "spinach",
+          "grams": 25
+        },
+        {
+          "id": "hemp",
+          "grams": 10
+        }
+      ],
+      "instructions": [
+        "Wash the fruit and spinach. Peel fruit as needed.",
+        "Add milk, fruit, spinach, and hemp hearts to a blender.",
+        "Blend for 45\u201360 seconds until smooth. Add a splash of water if you prefer a thinner texture."
+      ],
+      "art": 2
+    },
+    {
+      "id": "recipe-31",
+      "name": "Broccoli & chickpeas Grain Bowl",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Lunch",
+      "prep": 10,
+      "cook": 15,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Plant Based",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "quinoa",
+          "grams": 150
+        },
+        {
+          "id": "chickpeas",
+          "grams": 120
+        },
+        {
+          "id": "broccoli",
+          "grams": 120
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        },
+        {
+          "id": "lemon",
+          "grams": 15
+        }
+      ],
+      "instructions": [
+        "Use cooked quinoa and cooked protein; wash and chop the vegetables.",
+        "Warm the quinoa and protein in a skillet with olive oil. If using chicken or salmon, use fully cooked leftovers and reheat to 74\u00b0C / 165\u00b0F.",
+        "For cucumber or tomato, add raw at serving. For other vegetables, steam or saut\u00e9 until tender.",
+        "Arrange the grain, protein, and vegetables in a bowl and finish with lemon juice."
+      ],
+      "art": 3
+    },
+    {
+      "id": "recipe-32",
+      "name": "Cauliflower & lentils Grain Bowl",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Lunch",
+      "prep": 10,
+      "cook": 15,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Plant Based",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "quinoa",
+          "grams": 150
+        },
+        {
+          "id": "lentils",
+          "grams": 120
+        },
+        {
+          "id": "cauliflower",
+          "grams": 120
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        },
+        {
+          "id": "lemon",
+          "grams": 15
+        }
+      ],
+      "instructions": [
+        "Use cooked quinoa and cooked protein; wash and chop the vegetables.",
+        "Warm the quinoa and protein in a skillet with olive oil. If using chicken or salmon, use fully cooked leftovers and reheat to 74\u00b0C / 165\u00b0F.",
+        "For cucumber or tomato, add raw at serving. For other vegetables, steam or saut\u00e9 until tender.",
+        "Arrange the grain, protein, and vegetables in a bowl and finish with lemon juice."
+      ],
+      "art": 3
+    },
+    {
+      "id": "recipe-33",
+      "name": "Carrot & black beans Grain Bowl",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Lunch",
+      "prep": 10,
+      "cook": 15,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Plant Based",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "quinoa",
+          "grams": 150
+        },
+        {
+          "id": "beans",
+          "grams": 120
+        },
+        {
+          "id": "carrot",
+          "grams": 120
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        },
+        {
+          "id": "lemon",
+          "grams": 15
+        }
+      ],
+      "instructions": [
+        "Use cooked quinoa and cooked protein; wash and chop the vegetables.",
+        "Warm the quinoa and protein in a skillet with olive oil. If using chicken or salmon, use fully cooked leftovers and reheat to 74\u00b0C / 165\u00b0F.",
+        "For cucumber or tomato, add raw at serving. For other vegetables, steam or saut\u00e9 until tender.",
+        "Arrange the grain, protein, and vegetables in a bowl and finish with lemon juice."
+      ],
+      "art": 3
+    },
+    {
+      "id": "recipe-34",
+      "name": "Sweet pepper & tofu Grain Bowl",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Lunch",
+      "prep": 10,
+      "cook": 15,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Plant Based",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "quinoa",
+          "grams": 150
+        },
+        {
+          "id": "tofu",
+          "grams": 120
+        },
+        {
+          "id": "pepper",
+          "grams": 120
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        },
+        {
+          "id": "lemon",
+          "grams": 15
+        }
+      ],
+      "instructions": [
+        "Use cooked quinoa and cooked protein; wash and chop the vegetables.",
+        "Warm the quinoa and protein in a skillet with olive oil. If using chicken or salmon, use fully cooked leftovers and reheat to 74\u00b0C / 165\u00b0F.",
+        "For cucumber or tomato, add raw at serving. For other vegetables, steam or saut\u00e9 until tender.",
+        "Arrange the grain, protein, and vegetables in a bowl and finish with lemon juice."
+      ],
+      "art": 3
+    },
+    {
+      "id": "recipe-35",
+      "name": "Tomato & chicken breast Grain Bowl",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Lunch",
+      "prep": 10,
+      "cook": 15,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "quinoa",
+          "grams": 150
+        },
+        {
+          "id": "chicken",
+          "grams": 120
+        },
+        {
+          "id": "tomato",
+          "grams": 120
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        },
+        {
+          "id": "lemon",
+          "grams": 15
+        }
+      ],
+      "instructions": [
+        "Use cooked quinoa and cooked protein; wash and chop the vegetables.",
+        "Warm the quinoa and protein in a skillet with olive oil. If using chicken or salmon, use fully cooked leftovers and reheat to 74\u00b0C / 165\u00b0F.",
+        "For cucumber or tomato, add raw at serving. For other vegetables, steam or saut\u00e9 until tender.",
+        "Arrange the grain, protein, and vegetables in a bowl and finish with lemon juice."
+      ],
+      "art": 3
+    },
+    {
+      "id": "recipe-36",
+      "name": "Spinach & salmon Grain Bowl",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Lunch",
+      "prep": 10,
+      "cook": 15,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "quinoa",
+          "grams": 150
+        },
+        {
+          "id": "salmon",
+          "grams": 120
+        },
+        {
+          "id": "spinach",
+          "grams": 120
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        },
+        {
+          "id": "lemon",
+          "grams": 15
+        }
+      ],
+      "instructions": [
+        "Use cooked quinoa and cooked protein; wash and chop the vegetables.",
+        "Warm the quinoa and protein in a skillet with olive oil. If using chicken or salmon, use fully cooked leftovers and reheat to 74\u00b0C / 165\u00b0F.",
+        "For cucumber or tomato, add raw at serving. For other vegetables, steam or saut\u00e9 until tender.",
+        "Arrange the grain, protein, and vegetables in a bowl and finish with lemon juice."
+      ],
+      "art": 3
+    },
+    {
+      "id": "recipe-37",
+      "name": "Kale & chickpeas Grain Bowl",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Lunch",
+      "prep": 10,
+      "cook": 15,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Plant Based",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "quinoa",
+          "grams": 150
+        },
+        {
+          "id": "chickpeas",
+          "grams": 120
+        },
+        {
+          "id": "kale",
+          "grams": 120
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        },
+        {
+          "id": "lemon",
+          "grams": 15
+        }
+      ],
+      "instructions": [
+        "Use cooked quinoa and cooked protein; wash and chop the vegetables.",
+        "Warm the quinoa and protein in a skillet with olive oil. If using chicken or salmon, use fully cooked leftovers and reheat to 74\u00b0C / 165\u00b0F.",
+        "For cucumber or tomato, add raw at serving. For other vegetables, steam or saut\u00e9 until tender.",
+        "Arrange the grain, protein, and vegetables in a bowl and finish with lemon juice."
+      ],
+      "art": 3
+    },
+    {
+      "id": "recipe-38",
+      "name": "Sweet potato & tofu Grain Bowl",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Lunch",
+      "prep": 10,
+      "cook": 15,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Plant Based",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "quinoa",
+          "grams": 150
+        },
+        {
+          "id": "tofu",
+          "grams": 120
+        },
+        {
+          "id": "sweetpotato",
+          "grams": 120
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        },
+        {
+          "id": "lemon",
+          "grams": 15
+        }
+      ],
+      "instructions": [
+        "Use cooked quinoa and cooked protein; wash and chop the vegetables.",
+        "Warm the quinoa and protein in a skillet with olive oil. If using chicken or salmon, use fully cooked leftovers and reheat to 74\u00b0C / 165\u00b0F.",
+        "For cucumber or tomato, add raw at serving. For other vegetables, steam or saut\u00e9 until tender.",
+        "Arrange the grain, protein, and vegetables in a bowl and finish with lemon juice."
+      ],
+      "art": 3
+    },
+    {
+      "id": "recipe-39",
+      "name": "Cucumber & black beans Grain Bowl",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Lunch",
+      "prep": 10,
+      "cook": 15,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Plant Based",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "quinoa",
+          "grams": 150
+        },
+        {
+          "id": "beans",
+          "grams": 120
+        },
+        {
+          "id": "cucumber",
+          "grams": 120
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        },
+        {
+          "id": "lemon",
+          "grams": 15
+        }
+      ],
+      "instructions": [
+        "Use cooked quinoa and cooked protein; wash and chop the vegetables.",
+        "Warm the quinoa and protein in a skillet with olive oil. If using chicken or salmon, use fully cooked leftovers and reheat to 74\u00b0C / 165\u00b0F.",
+        "For cucumber or tomato, add raw at serving. For other vegetables, steam or saut\u00e9 until tender.",
+        "Arrange the grain, protein, and vegetables in a bowl and finish with lemon juice."
+      ],
+      "art": 3
+    },
+    {
+      "id": "recipe-40",
+      "name": "Potato & lentils Grain Bowl",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Lunch",
+      "prep": 10,
+      "cook": 15,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Plant Based",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "quinoa",
+          "grams": 150
+        },
+        {
+          "id": "lentils",
+          "grams": 120
+        },
+        {
+          "id": "potato",
+          "grams": 120
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        },
+        {
+          "id": "lemon",
+          "grams": 15
+        }
+      ],
+      "instructions": [
+        "Use cooked quinoa and cooked protein; wash and chop the vegetables.",
+        "Warm the quinoa and protein in a skillet with olive oil. If using chicken or salmon, use fully cooked leftovers and reheat to 74\u00b0C / 165\u00b0F.",
+        "For cucumber or tomato, add raw at serving. For other vegetables, steam or saut\u00e9 until tender.",
+        "Arrange the grain, protein, and vegetables in a bowl and finish with lemon juice."
+      ],
+      "art": 3
+    },
+    {
+      "id": "recipe-41",
+      "name": "Broccoli Lentil Soup",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Dinner",
+      "prep": 10,
+      "cook": 20,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Plant Based",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "lentils",
+          "grams": 160
+        },
+        {
+          "id": "broccoli",
+          "grams": 120
+        },
+        {
+          "id": "onion",
+          "grams": 40
+        },
+        {
+          "id": "garlic",
+          "grams": 3
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        },
+        {
+          "id": "water",
+          "grams": 250
+        }
+      ],
+      "instructions": [
+        "Wash and chop vegetables and onion; mince garlic.",
+        "Heat oil in a saucepan. Soften the onion for 4 minutes, then add garlic for 30 seconds.",
+        "Add the vegetables, cooked lentils, and water. Bring to a simmer.",
+        "Cook gently for 15 minutes until the vegetables are tender. For cucumber, add it at the end instead. Season to taste."
+      ],
+      "art": 4
+    },
+    {
+      "id": "recipe-42",
+      "name": "Cauliflower Lentil Soup",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Dinner",
+      "prep": 10,
+      "cook": 20,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Plant Based",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "lentils",
+          "grams": 160
+        },
+        {
+          "id": "cauliflower",
+          "grams": 120
+        },
+        {
+          "id": "onion",
+          "grams": 40
+        },
+        {
+          "id": "garlic",
+          "grams": 3
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        },
+        {
+          "id": "water",
+          "grams": 250
+        }
+      ],
+      "instructions": [
+        "Wash and chop vegetables and onion; mince garlic.",
+        "Heat oil in a saucepan. Soften the onion for 4 minutes, then add garlic for 30 seconds.",
+        "Add the vegetables, cooked lentils, and water. Bring to a simmer.",
+        "Cook gently for 15 minutes until the vegetables are tender. For cucumber, add it at the end instead. Season to taste."
+      ],
+      "art": 4
+    },
+    {
+      "id": "recipe-43",
+      "name": "Carrot Lentil Soup",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Dinner",
+      "prep": 10,
+      "cook": 20,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Plant Based",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "lentils",
+          "grams": 160
+        },
+        {
+          "id": "carrot",
+          "grams": 120
+        },
+        {
+          "id": "onion",
+          "grams": 40
+        },
+        {
+          "id": "garlic",
+          "grams": 3
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        },
+        {
+          "id": "water",
+          "grams": 250
+        }
+      ],
+      "instructions": [
+        "Wash and chop vegetables and onion; mince garlic.",
+        "Heat oil in a saucepan. Soften the onion for 4 minutes, then add garlic for 30 seconds.",
+        "Add the vegetables, cooked lentils, and water. Bring to a simmer.",
+        "Cook gently for 15 minutes until the vegetables are tender. For cucumber, add it at the end instead. Season to taste."
+      ],
+      "art": 4
+    },
+    {
+      "id": "recipe-44",
+      "name": "Sweet pepper Lentil Soup",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Dinner",
+      "prep": 10,
+      "cook": 20,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Plant Based",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "lentils",
+          "grams": 160
+        },
+        {
+          "id": "pepper",
+          "grams": 120
+        },
+        {
+          "id": "onion",
+          "grams": 40
+        },
+        {
+          "id": "garlic",
+          "grams": 3
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        },
+        {
+          "id": "water",
+          "grams": 250
+        }
+      ],
+      "instructions": [
+        "Wash and chop vegetables and onion; mince garlic.",
+        "Heat oil in a saucepan. Soften the onion for 4 minutes, then add garlic for 30 seconds.",
+        "Add the vegetables, cooked lentils, and water. Bring to a simmer.",
+        "Cook gently for 15 minutes until the vegetables are tender. For cucumber, add it at the end instead. Season to taste."
+      ],
+      "art": 4
+    },
+    {
+      "id": "recipe-45",
+      "name": "Tomato Lentil Soup",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Dinner",
+      "prep": 10,
+      "cook": 20,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Plant Based",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "lentils",
+          "grams": 160
+        },
+        {
+          "id": "tomato",
+          "grams": 120
+        },
+        {
+          "id": "onion",
+          "grams": 40
+        },
+        {
+          "id": "garlic",
+          "grams": 3
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        },
+        {
+          "id": "water",
+          "grams": 250
+        }
+      ],
+      "instructions": [
+        "Wash and chop vegetables and onion; mince garlic.",
+        "Heat oil in a saucepan. Soften the onion for 4 minutes, then add garlic for 30 seconds.",
+        "Add the vegetables, cooked lentils, and water. Bring to a simmer.",
+        "Cook gently for 15 minutes until the vegetables are tender. For cucumber, add it at the end instead. Season to taste."
+      ],
+      "art": 4
+    },
+    {
+      "id": "recipe-46",
+      "name": "Spinach Lentil Soup",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Dinner",
+      "prep": 10,
+      "cook": 20,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Plant Based",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "lentils",
+          "grams": 160
+        },
+        {
+          "id": "spinach",
+          "grams": 120
+        },
+        {
+          "id": "onion",
+          "grams": 40
+        },
+        {
+          "id": "garlic",
+          "grams": 3
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        },
+        {
+          "id": "water",
+          "grams": 250
+        }
+      ],
+      "instructions": [
+        "Wash and chop vegetables and onion; mince garlic.",
+        "Heat oil in a saucepan. Soften the onion for 4 minutes, then add garlic for 30 seconds.",
+        "Add the vegetables, cooked lentils, and water. Bring to a simmer.",
+        "Cook gently for 15 minutes until the vegetables are tender. For cucumber, add it at the end instead. Season to taste."
+      ],
+      "art": 4
+    },
+    {
+      "id": "recipe-47",
+      "name": "Kale Lentil Soup",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Dinner",
+      "prep": 10,
+      "cook": 20,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Plant Based",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "lentils",
+          "grams": 160
+        },
+        {
+          "id": "kale",
+          "grams": 120
+        },
+        {
+          "id": "onion",
+          "grams": 40
+        },
+        {
+          "id": "garlic",
+          "grams": 3
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        },
+        {
+          "id": "water",
+          "grams": 250
+        }
+      ],
+      "instructions": [
+        "Wash and chop vegetables and onion; mince garlic.",
+        "Heat oil in a saucepan. Soften the onion for 4 minutes, then add garlic for 30 seconds.",
+        "Add the vegetables, cooked lentils, and water. Bring to a simmer.",
+        "Cook gently for 15 minutes until the vegetables are tender. For cucumber, add it at the end instead. Season to taste."
+      ],
+      "art": 4
+    },
+    {
+      "id": "recipe-48",
+      "name": "Sweet potato Lentil Soup",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Dinner",
+      "prep": 10,
+      "cook": 20,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Plant Based",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "lentils",
+          "grams": 160
+        },
+        {
+          "id": "sweetpotato",
+          "grams": 120
+        },
+        {
+          "id": "onion",
+          "grams": 40
+        },
+        {
+          "id": "garlic",
+          "grams": 3
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        },
+        {
+          "id": "water",
+          "grams": 250
+        }
+      ],
+      "instructions": [
+        "Wash and chop vegetables and onion; mince garlic.",
+        "Heat oil in a saucepan. Soften the onion for 4 minutes, then add garlic for 30 seconds.",
+        "Add the vegetables, cooked lentils, and water. Bring to a simmer.",
+        "Cook gently for 15 minutes until the vegetables are tender. For cucumber, add it at the end instead. Season to taste."
+      ],
+      "art": 4
+    },
+    {
+      "id": "recipe-49",
+      "name": "Cucumber Lentil Soup",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Dinner",
+      "prep": 10,
+      "cook": 20,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Plant Based",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "lentils",
+          "grams": 160
+        },
+        {
+          "id": "cucumber",
+          "grams": 120
+        },
+        {
+          "id": "onion",
+          "grams": 40
+        },
+        {
+          "id": "garlic",
+          "grams": 3
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        },
+        {
+          "id": "water",
+          "grams": 250
+        }
+      ],
+      "instructions": [
+        "Wash and chop vegetables and onion; mince garlic.",
+        "Heat oil in a saucepan. Soften the onion for 4 minutes, then add garlic for 30 seconds.",
+        "Add the vegetables, cooked lentils, and water. Bring to a simmer.",
+        "Cook gently for 15 minutes until the vegetables are tender. For cucumber, add it at the end instead. Season to taste."
+      ],
+      "art": 4
+    },
+    {
+      "id": "recipe-50",
+      "name": "Potato Lentil Soup",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Dinner",
+      "prep": 10,
+      "cook": 20,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Plant Based",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "lentils",
+          "grams": 160
+        },
+        {
+          "id": "potato",
+          "grams": 120
+        },
+        {
+          "id": "onion",
+          "grams": 40
+        },
+        {
+          "id": "garlic",
+          "grams": 3
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        },
+        {
+          "id": "water",
+          "grams": 250
+        }
+      ],
+      "instructions": [
+        "Wash and chop vegetables and onion; mince garlic.",
+        "Heat oil in a saucepan. Soften the onion for 4 minutes, then add garlic for 30 seconds.",
+        "Add the vegetables, cooked lentils, and water. Bring to a simmer.",
+        "Cook gently for 15 minutes until the vegetables are tender. For cucumber, add it at the end instead. Season to taste."
+      ],
+      "art": 4
+    },
+    {
+      "id": "recipe-51",
+      "name": "Broccoli Wholegrain Wrap",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Lunch",
+      "prep": 10,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Under 15 Minutes",
+        "Plant Based",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "tortilla",
+          "grams": 60
+        },
+        {
+          "id": "hummus",
+          "grams": 50
+        },
+        {
+          "id": "broccoli",
+          "grams": 100
+        },
+        {
+          "id": "spinach",
+          "grams": 25
+        },
+        {
+          "id": "chickpeas",
+          "grams": 70
+        }
+      ],
+      "instructions": [
+        "Wash and thinly slice vegetables. Steam potato, sweet potato, broccoli, or cauliflower until tender before filling.",
+        "Spread hummus over a wholegrain tortilla.",
+        "Add spinach, cooked chickpeas, and vegetables. Fold the sides inward and roll tightly.",
+        "Slice in half and serve; refrigerate leftovers within 2 hours."
+      ],
+      "art": 5
+    },
+    {
+      "id": "recipe-52",
+      "name": "Cauliflower Wholegrain Wrap",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Lunch",
+      "prep": 10,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Under 15 Minutes",
+        "Plant Based",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "tortilla",
+          "grams": 60
+        },
+        {
+          "id": "hummus",
+          "grams": 50
+        },
+        {
+          "id": "cauliflower",
+          "grams": 100
+        },
+        {
+          "id": "spinach",
+          "grams": 25
+        },
+        {
+          "id": "chickpeas",
+          "grams": 70
+        }
+      ],
+      "instructions": [
+        "Wash and thinly slice vegetables. Steam potato, sweet potato, broccoli, or cauliflower until tender before filling.",
+        "Spread hummus over a wholegrain tortilla.",
+        "Add spinach, cooked chickpeas, and vegetables. Fold the sides inward and roll tightly.",
+        "Slice in half and serve; refrigerate leftovers within 2 hours."
+      ],
+      "art": 5
+    },
+    {
+      "id": "recipe-53",
+      "name": "Carrot Wholegrain Wrap",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Lunch",
+      "prep": 10,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Under 15 Minutes",
+        "Plant Based",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "tortilla",
+          "grams": 60
+        },
+        {
+          "id": "hummus",
+          "grams": 50
+        },
+        {
+          "id": "carrot",
+          "grams": 100
+        },
+        {
+          "id": "spinach",
+          "grams": 25
+        },
+        {
+          "id": "chickpeas",
+          "grams": 70
+        }
+      ],
+      "instructions": [
+        "Wash and thinly slice vegetables. Steam potato, sweet potato, broccoli, or cauliflower until tender before filling.",
+        "Spread hummus over a wholegrain tortilla.",
+        "Add spinach, cooked chickpeas, and vegetables. Fold the sides inward and roll tightly.",
+        "Slice in half and serve; refrigerate leftovers within 2 hours."
+      ],
+      "art": 5
+    },
+    {
+      "id": "recipe-54",
+      "name": "Sweet pepper Wholegrain Wrap",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Lunch",
+      "prep": 10,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Under 15 Minutes",
+        "Plant Based",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "tortilla",
+          "grams": 60
+        },
+        {
+          "id": "hummus",
+          "grams": 50
+        },
+        {
+          "id": "pepper",
+          "grams": 100
+        },
+        {
+          "id": "spinach",
+          "grams": 25
+        },
+        {
+          "id": "chickpeas",
+          "grams": 70
+        }
+      ],
+      "instructions": [
+        "Wash and thinly slice vegetables. Steam potato, sweet potato, broccoli, or cauliflower until tender before filling.",
+        "Spread hummus over a wholegrain tortilla.",
+        "Add spinach, cooked chickpeas, and vegetables. Fold the sides inward and roll tightly.",
+        "Slice in half and serve; refrigerate leftovers within 2 hours."
+      ],
+      "art": 5
+    },
+    {
+      "id": "recipe-55",
+      "name": "Tomato Wholegrain Wrap",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Lunch",
+      "prep": 10,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Under 15 Minutes",
+        "Plant Based",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "tortilla",
+          "grams": 60
+        },
+        {
+          "id": "hummus",
+          "grams": 50
+        },
+        {
+          "id": "tomato",
+          "grams": 100
+        },
+        {
+          "id": "spinach",
+          "grams": 25
+        },
+        {
+          "id": "chickpeas",
+          "grams": 70
+        }
+      ],
+      "instructions": [
+        "Wash and thinly slice vegetables. Steam potato, sweet potato, broccoli, or cauliflower until tender before filling.",
+        "Spread hummus over a wholegrain tortilla.",
+        "Add spinach, cooked chickpeas, and vegetables. Fold the sides inward and roll tightly.",
+        "Slice in half and serve; refrigerate leftovers within 2 hours."
+      ],
+      "art": 5
+    },
+    {
+      "id": "recipe-56",
+      "name": "Spinach Wholegrain Wrap",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Lunch",
+      "prep": 10,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Under 15 Minutes",
+        "Plant Based",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "tortilla",
+          "grams": 60
+        },
+        {
+          "id": "hummus",
+          "grams": 50
+        },
+        {
+          "id": "spinach",
+          "grams": 100
+        },
+        {
+          "id": "spinach",
+          "grams": 25
+        },
+        {
+          "id": "chickpeas",
+          "grams": 70
+        }
+      ],
+      "instructions": [
+        "Wash and thinly slice vegetables. Steam potato, sweet potato, broccoli, or cauliflower until tender before filling.",
+        "Spread hummus over a wholegrain tortilla.",
+        "Add spinach, cooked chickpeas, and vegetables. Fold the sides inward and roll tightly.",
+        "Slice in half and serve; refrigerate leftovers within 2 hours."
+      ],
+      "art": 5
+    },
+    {
+      "id": "recipe-57",
+      "name": "Kale Wholegrain Wrap",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Lunch",
+      "prep": 10,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Under 15 Minutes",
+        "Plant Based",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "tortilla",
+          "grams": 60
+        },
+        {
+          "id": "hummus",
+          "grams": 50
+        },
+        {
+          "id": "kale",
+          "grams": 100
+        },
+        {
+          "id": "spinach",
+          "grams": 25
+        },
+        {
+          "id": "chickpeas",
+          "grams": 70
+        }
+      ],
+      "instructions": [
+        "Wash and thinly slice vegetables. Steam potato, sweet potato, broccoli, or cauliflower until tender before filling.",
+        "Spread hummus over a wholegrain tortilla.",
+        "Add spinach, cooked chickpeas, and vegetables. Fold the sides inward and roll tightly.",
+        "Slice in half and serve; refrigerate leftovers within 2 hours."
+      ],
+      "art": 5
+    },
+    {
+      "id": "recipe-58",
+      "name": "Sweet potato Wholegrain Wrap",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Lunch",
+      "prep": 10,
+      "cook": 15,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Plant Based",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "tortilla",
+          "grams": 60
+        },
+        {
+          "id": "hummus",
+          "grams": 50
+        },
+        {
+          "id": "sweetpotato",
+          "grams": 100
+        },
+        {
+          "id": "spinach",
+          "grams": 25
+        },
+        {
+          "id": "chickpeas",
+          "grams": 70
+        }
+      ],
+      "instructions": [
+        "Wash and thinly slice vegetables. Steam potato, sweet potato, broccoli, or cauliflower until tender before filling.",
+        "Spread hummus over a wholegrain tortilla.",
+        "Add spinach, cooked chickpeas, and vegetables. Fold the sides inward and roll tightly.",
+        "Slice in half and serve; refrigerate leftovers within 2 hours."
+      ],
+      "art": 5
+    },
+    {
+      "id": "recipe-59",
+      "name": "Cucumber Wholegrain Wrap",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Lunch",
+      "prep": 10,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Under 15 Minutes",
+        "Plant Based",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "tortilla",
+          "grams": 60
+        },
+        {
+          "id": "hummus",
+          "grams": 50
+        },
+        {
+          "id": "cucumber",
+          "grams": 100
+        },
+        {
+          "id": "spinach",
+          "grams": 25
+        },
+        {
+          "id": "chickpeas",
+          "grams": 70
+        }
+      ],
+      "instructions": [
+        "Wash and thinly slice vegetables. Steam potato, sweet potato, broccoli, or cauliflower until tender before filling.",
+        "Spread hummus over a wholegrain tortilla.",
+        "Add spinach, cooked chickpeas, and vegetables. Fold the sides inward and roll tightly.",
+        "Slice in half and serve; refrigerate leftovers within 2 hours."
+      ],
+      "art": 5
+    },
+    {
+      "id": "recipe-60",
+      "name": "Potato Wholegrain Wrap",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Lunch",
+      "prep": 10,
+      "cook": 15,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Plant Based",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "tortilla",
+          "grams": 60
+        },
+        {
+          "id": "hummus",
+          "grams": 50
+        },
+        {
+          "id": "potato",
+          "grams": 100
+        },
+        {
+          "id": "spinach",
+          "grams": 25
+        },
+        {
+          "id": "chickpeas",
+          "grams": 70
+        }
+      ],
+      "instructions": [
+        "Wash and thinly slice vegetables. Steam potato, sweet potato, broccoli, or cauliflower until tender before filling.",
+        "Spread hummus over a wholegrain tortilla.",
+        "Add spinach, cooked chickpeas, and vegetables. Fold the sides inward and roll tightly.",
+        "Slice in half and serve; refrigerate leftovers within 2 hours."
+      ],
+      "art": 5
+    },
+    {
+      "id": "recipe-61",
+      "name": "Broccoli & chickpeas Rice Skillet",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Dinner",
+      "prep": 10,
+      "cook": 15,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Plant Based",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "rice",
+          "grams": 160
+        },
+        {
+          "id": "chickpeas",
+          "grams": 120
+        },
+        {
+          "id": "broccoli",
+          "grams": 130
+        },
+        {
+          "id": "oil",
+          "grams": 7
+        },
+        {
+          "id": "garlic",
+          "grams": 3
+        }
+      ],
+      "instructions": [
+        "Prepare cooked rice and cooked protein. Chop the vegetables and mince garlic.",
+        "Warm oil in a skillet and cook garlic for 30 seconds.",
+        "Add vegetables and cook until tender; add cucumber or tomato only in the last minute.",
+        "Add cooked rice and protein, stirring until hot throughout. Reheat cooked chicken or salmon to 74\u00b0C / 165\u00b0F. Serve promptly."
+      ],
+      "art": 6
+    },
+    {
+      "id": "recipe-62",
+      "name": "Cauliflower & lentils Rice Skillet",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Dinner",
+      "prep": 10,
+      "cook": 15,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Plant Based",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "rice",
+          "grams": 160
+        },
+        {
+          "id": "lentils",
+          "grams": 120
+        },
+        {
+          "id": "cauliflower",
+          "grams": 130
+        },
+        {
+          "id": "oil",
+          "grams": 7
+        },
+        {
+          "id": "garlic",
+          "grams": 3
+        }
+      ],
+      "instructions": [
+        "Prepare cooked rice and cooked protein. Chop the vegetables and mince garlic.",
+        "Warm oil in a skillet and cook garlic for 30 seconds.",
+        "Add vegetables and cook until tender; add cucumber or tomato only in the last minute.",
+        "Add cooked rice and protein, stirring until hot throughout. Reheat cooked chicken or salmon to 74\u00b0C / 165\u00b0F. Serve promptly."
+      ],
+      "art": 6
+    },
+    {
+      "id": "recipe-63",
+      "name": "Carrot & black beans Rice Skillet",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Dinner",
+      "prep": 10,
+      "cook": 15,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Plant Based",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "rice",
+          "grams": 160
+        },
+        {
+          "id": "beans",
+          "grams": 120
+        },
+        {
+          "id": "carrot",
+          "grams": 130
+        },
+        {
+          "id": "oil",
+          "grams": 7
+        },
+        {
+          "id": "garlic",
+          "grams": 3
+        }
+      ],
+      "instructions": [
+        "Prepare cooked rice and cooked protein. Chop the vegetables and mince garlic.",
+        "Warm oil in a skillet and cook garlic for 30 seconds.",
+        "Add vegetables and cook until tender; add cucumber or tomato only in the last minute.",
+        "Add cooked rice and protein, stirring until hot throughout. Reheat cooked chicken or salmon to 74\u00b0C / 165\u00b0F. Serve promptly."
+      ],
+      "art": 6
+    },
+    {
+      "id": "recipe-64",
+      "name": "Sweet pepper & tofu Rice Skillet",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Dinner",
+      "prep": 10,
+      "cook": 15,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Plant Based",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "rice",
+          "grams": 160
+        },
+        {
+          "id": "tofu",
+          "grams": 120
+        },
+        {
+          "id": "pepper",
+          "grams": 130
+        },
+        {
+          "id": "oil",
+          "grams": 7
+        },
+        {
+          "id": "garlic",
+          "grams": 3
+        }
+      ],
+      "instructions": [
+        "Prepare cooked rice and cooked protein. Chop the vegetables and mince garlic.",
+        "Warm oil in a skillet and cook garlic for 30 seconds.",
+        "Add vegetables and cook until tender; add cucumber or tomato only in the last minute.",
+        "Add cooked rice and protein, stirring until hot throughout. Reheat cooked chicken or salmon to 74\u00b0C / 165\u00b0F. Serve promptly."
+      ],
+      "art": 6
+    },
+    {
+      "id": "recipe-65",
+      "name": "Tomato & chicken breast Rice Skillet",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Dinner",
+      "prep": 10,
+      "cook": 15,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "rice",
+          "grams": 160
+        },
+        {
+          "id": "chicken",
+          "grams": 120
+        },
+        {
+          "id": "tomato",
+          "grams": 130
+        },
+        {
+          "id": "oil",
+          "grams": 7
+        },
+        {
+          "id": "garlic",
+          "grams": 3
+        }
+      ],
+      "instructions": [
+        "Prepare cooked rice and cooked protein. Chop the vegetables and mince garlic.",
+        "Warm oil in a skillet and cook garlic for 30 seconds.",
+        "Add vegetables and cook until tender; add cucumber or tomato only in the last minute.",
+        "Add cooked rice and protein, stirring until hot throughout. Reheat cooked chicken or salmon to 74\u00b0C / 165\u00b0F. Serve promptly."
+      ],
+      "art": 6
+    },
+    {
+      "id": "recipe-66",
+      "name": "Spinach & salmon Rice Skillet",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Dinner",
+      "prep": 10,
+      "cook": 15,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "rice",
+          "grams": 160
+        },
+        {
+          "id": "salmon",
+          "grams": 120
+        },
+        {
+          "id": "spinach",
+          "grams": 130
+        },
+        {
+          "id": "oil",
+          "grams": 7
+        },
+        {
+          "id": "garlic",
+          "grams": 3
+        }
+      ],
+      "instructions": [
+        "Prepare cooked rice and cooked protein. Chop the vegetables and mince garlic.",
+        "Warm oil in a skillet and cook garlic for 30 seconds.",
+        "Add vegetables and cook until tender; add cucumber or tomato only in the last minute.",
+        "Add cooked rice and protein, stirring until hot throughout. Reheat cooked chicken or salmon to 74\u00b0C / 165\u00b0F. Serve promptly."
+      ],
+      "art": 6
+    },
+    {
+      "id": "recipe-67",
+      "name": "Kale & chickpeas Rice Skillet",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Dinner",
+      "prep": 10,
+      "cook": 15,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Plant Based",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "rice",
+          "grams": 160
+        },
+        {
+          "id": "chickpeas",
+          "grams": 120
+        },
+        {
+          "id": "kale",
+          "grams": 130
+        },
+        {
+          "id": "oil",
+          "grams": 7
+        },
+        {
+          "id": "garlic",
+          "grams": 3
+        }
+      ],
+      "instructions": [
+        "Prepare cooked rice and cooked protein. Chop the vegetables and mince garlic.",
+        "Warm oil in a skillet and cook garlic for 30 seconds.",
+        "Add vegetables and cook until tender; add cucumber or tomato only in the last minute.",
+        "Add cooked rice and protein, stirring until hot throughout. Reheat cooked chicken or salmon to 74\u00b0C / 165\u00b0F. Serve promptly."
+      ],
+      "art": 6
+    },
+    {
+      "id": "recipe-68",
+      "name": "Sweet potato & tofu Rice Skillet",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Dinner",
+      "prep": 10,
+      "cook": 15,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Plant Based",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "rice",
+          "grams": 160
+        },
+        {
+          "id": "tofu",
+          "grams": 120
+        },
+        {
+          "id": "sweetpotato",
+          "grams": 130
+        },
+        {
+          "id": "oil",
+          "grams": 7
+        },
+        {
+          "id": "garlic",
+          "grams": 3
+        }
+      ],
+      "instructions": [
+        "Prepare cooked rice and cooked protein. Chop the vegetables and mince garlic.",
+        "Warm oil in a skillet and cook garlic for 30 seconds.",
+        "Add vegetables and cook until tender; add cucumber or tomato only in the last minute.",
+        "Add cooked rice and protein, stirring until hot throughout. Reheat cooked chicken or salmon to 74\u00b0C / 165\u00b0F. Serve promptly."
+      ],
+      "art": 6
+    },
+    {
+      "id": "recipe-69",
+      "name": "Cucumber & black beans Rice Skillet",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Dinner",
+      "prep": 10,
+      "cook": 15,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Plant Based",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "rice",
+          "grams": 160
+        },
+        {
+          "id": "beans",
+          "grams": 120
+        },
+        {
+          "id": "cucumber",
+          "grams": 130
+        },
+        {
+          "id": "oil",
+          "grams": 7
+        },
+        {
+          "id": "garlic",
+          "grams": 3
+        }
+      ],
+      "instructions": [
+        "Prepare cooked rice and cooked protein. Chop the vegetables and mince garlic.",
+        "Warm oil in a skillet and cook garlic for 30 seconds.",
+        "Add vegetables and cook until tender; add cucumber or tomato only in the last minute.",
+        "Add cooked rice and protein, stirring until hot throughout. Reheat cooked chicken or salmon to 74\u00b0C / 165\u00b0F. Serve promptly."
+      ],
+      "art": 6
+    },
+    {
+      "id": "recipe-70",
+      "name": "Potato & lentils Rice Skillet",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Dinner",
+      "prep": 10,
+      "cook": 15,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Plant Based",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "rice",
+          "grams": 160
+        },
+        {
+          "id": "lentils",
+          "grams": 120
+        },
+        {
+          "id": "potato",
+          "grams": 130
+        },
+        {
+          "id": "oil",
+          "grams": 7
+        },
+        {
+          "id": "garlic",
+          "grams": 3
+        }
+      ],
+      "instructions": [
+        "Prepare cooked rice and cooked protein. Chop the vegetables and mince garlic.",
+        "Warm oil in a skillet and cook garlic for 30 seconds.",
+        "Add vegetables and cook until tender; add cucumber or tomato only in the last minute.",
+        "Add cooked rice and protein, stirring until hot throughout. Reheat cooked chicken or salmon to 74\u00b0C / 165\u00b0F. Serve promptly."
+      ],
+      "art": 6
+    },
+    {
+      "id": "recipe-71",
+      "name": "Broccoli Egg & Toast Plate",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 10,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "egg",
+          "grams": 100
+        },
+        {
+          "id": "bread",
+          "grams": 60
+        },
+        {
+          "id": "broccoli",
+          "grams": 90
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        }
+      ],
+      "instructions": [
+        "Wash and chop vegetables. Cook potato or sweet potato until tender before continuing.",
+        "Warm oil in a pan and saut\u00e9 the vegetables; keep cucumber or tomato raw if preferred.",
+        "Whisk the eggs and cook, stirring, until fully set. If swapping tofu, crumble and heat until hot throughout.",
+        "Toast the wholegrain bread and serve alongside the eggs and vegetables."
+      ],
+      "art": 7
+    },
+    {
+      "id": "recipe-72",
+      "name": "Cauliflower Egg & Toast Plate",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 10,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "egg",
+          "grams": 100
+        },
+        {
+          "id": "bread",
+          "grams": 60
+        },
+        {
+          "id": "cauliflower",
+          "grams": 90
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        }
+      ],
+      "instructions": [
+        "Wash and chop vegetables. Cook potato or sweet potato until tender before continuing.",
+        "Warm oil in a pan and saut\u00e9 the vegetables; keep cucumber or tomato raw if preferred.",
+        "Whisk the eggs and cook, stirring, until fully set. If swapping tofu, crumble and heat until hot throughout.",
+        "Toast the wholegrain bread and serve alongside the eggs and vegetables."
+      ],
+      "art": 7
+    },
+    {
+      "id": "recipe-73",
+      "name": "Carrot Egg & Toast Plate",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 10,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "egg",
+          "grams": 100
+        },
+        {
+          "id": "bread",
+          "grams": 60
+        },
+        {
+          "id": "carrot",
+          "grams": 90
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        }
+      ],
+      "instructions": [
+        "Wash and chop vegetables. Cook potato or sweet potato until tender before continuing.",
+        "Warm oil in a pan and saut\u00e9 the vegetables; keep cucumber or tomato raw if preferred.",
+        "Whisk the eggs and cook, stirring, until fully set. If swapping tofu, crumble and heat until hot throughout.",
+        "Toast the wholegrain bread and serve alongside the eggs and vegetables."
+      ],
+      "art": 7
+    },
+    {
+      "id": "recipe-74",
+      "name": "Sweet pepper Egg & Toast Plate",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 10,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "egg",
+          "grams": 100
+        },
+        {
+          "id": "bread",
+          "grams": 60
+        },
+        {
+          "id": "pepper",
+          "grams": 90
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        }
+      ],
+      "instructions": [
+        "Wash and chop vegetables. Cook potato or sweet potato until tender before continuing.",
+        "Warm oil in a pan and saut\u00e9 the vegetables; keep cucumber or tomato raw if preferred.",
+        "Whisk the eggs and cook, stirring, until fully set. If swapping tofu, crumble and heat until hot throughout.",
+        "Toast the wholegrain bread and serve alongside the eggs and vegetables."
+      ],
+      "art": 7
+    },
+    {
+      "id": "recipe-75",
+      "name": "Tomato Egg & Toast Plate",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 10,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "egg",
+          "grams": 100
+        },
+        {
+          "id": "bread",
+          "grams": 60
+        },
+        {
+          "id": "tomato",
+          "grams": 90
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        }
+      ],
+      "instructions": [
+        "Wash and chop vegetables. Cook potato or sweet potato until tender before continuing.",
+        "Warm oil in a pan and saut\u00e9 the vegetables; keep cucumber or tomato raw if preferred.",
+        "Whisk the eggs and cook, stirring, until fully set. If swapping tofu, crumble and heat until hot throughout.",
+        "Toast the wholegrain bread and serve alongside the eggs and vegetables."
+      ],
+      "art": 7
+    },
+    {
+      "id": "recipe-76",
+      "name": "Spinach Egg & Toast Plate",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 10,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "egg",
+          "grams": 100
+        },
+        {
+          "id": "bread",
+          "grams": 60
+        },
+        {
+          "id": "spinach",
+          "grams": 90
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        }
+      ],
+      "instructions": [
+        "Wash and chop vegetables. Cook potato or sweet potato until tender before continuing.",
+        "Warm oil in a pan and saut\u00e9 the vegetables; keep cucumber or tomato raw if preferred.",
+        "Whisk the eggs and cook, stirring, until fully set. If swapping tofu, crumble and heat until hot throughout.",
+        "Toast the wholegrain bread and serve alongside the eggs and vegetables."
+      ],
+      "art": 7
+    },
+    {
+      "id": "recipe-77",
+      "name": "Kale Egg & Toast Plate",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 10,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "egg",
+          "grams": 100
+        },
+        {
+          "id": "bread",
+          "grams": 60
+        },
+        {
+          "id": "kale",
+          "grams": 90
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        }
+      ],
+      "instructions": [
+        "Wash and chop vegetables. Cook potato or sweet potato until tender before continuing.",
+        "Warm oil in a pan and saut\u00e9 the vegetables; keep cucumber or tomato raw if preferred.",
+        "Whisk the eggs and cook, stirring, until fully set. If swapping tofu, crumble and heat until hot throughout.",
+        "Toast the wholegrain bread and serve alongside the eggs and vegetables."
+      ],
+      "art": 7
+    },
+    {
+      "id": "recipe-78",
+      "name": "Sweet potato Egg & Toast Plate",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 20,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "egg",
+          "grams": 100
+        },
+        {
+          "id": "bread",
+          "grams": 60
+        },
+        {
+          "id": "sweetpotato",
+          "grams": 90
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        }
+      ],
+      "instructions": [
+        "Wash and chop vegetables. Cook potato or sweet potato until tender before continuing.",
+        "Warm oil in a pan and saut\u00e9 the vegetables; keep cucumber or tomato raw if preferred.",
+        "Whisk the eggs and cook, stirring, until fully set. If swapping tofu, crumble and heat until hot throughout.",
+        "Toast the wholegrain bread and serve alongside the eggs and vegetables."
+      ],
+      "art": 7
+    },
+    {
+      "id": "recipe-79",
+      "name": "Cucumber Egg & Toast Plate",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 10,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "egg",
+          "grams": 100
+        },
+        {
+          "id": "bread",
+          "grams": 60
+        },
+        {
+          "id": "cucumber",
+          "grams": 90
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        }
+      ],
+      "instructions": [
+        "Wash and chop vegetables. Cook potato or sweet potato until tender before continuing.",
+        "Warm oil in a pan and saut\u00e9 the vegetables; keep cucumber or tomato raw if preferred.",
+        "Whisk the eggs and cook, stirring, until fully set. If swapping tofu, crumble and heat until hot throughout.",
+        "Toast the wholegrain bread and serve alongside the eggs and vegetables."
+      ],
+      "art": 7
+    },
+    {
+      "id": "recipe-80",
+      "name": "Potato Egg & Toast Plate",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Breakfast",
+      "prep": 5,
+      "cook": 20,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "egg",
+          "grams": 100
+        },
+        {
+          "id": "bread",
+          "grams": 60
+        },
+        {
+          "id": "potato",
+          "grams": 90
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        }
+      ],
+      "instructions": [
+        "Wash and chop vegetables. Cook potato or sweet potato until tender before continuing.",
+        "Warm oil in a pan and saut\u00e9 the vegetables; keep cucumber or tomato raw if preferred.",
+        "Whisk the eggs and cook, stirring, until fully set. If swapping tofu, crumble and heat until hot throughout.",
+        "Toast the wholegrain bread and serve alongside the eggs and vegetables."
+      ],
+      "art": 7
+    },
+    {
+      "id": "recipe-81",
+      "name": "Broccoli Chickpea Pasta",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Dinner",
+      "prep": 10,
+      "cook": 15,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Plant Based",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "pasta",
+          "grams": 180
+        },
+        {
+          "id": "chickpeas",
+          "grams": 90
+        },
+        {
+          "id": "broccoli",
+          "grams": 100
+        },
+        {
+          "id": "tomato",
+          "grams": 100
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        },
+        {
+          "id": "garlic",
+          "grams": 3
+        }
+      ],
+      "instructions": [
+        "Prepare cooked wholewheat pasta; wash and chop vegetables and tomatoes.",
+        "Warm oil in a pan, add minced garlic, and stir for 30 seconds.",
+        "Add tomatoes and vegetables; simmer until tender. Keep cucumber raw and add at serving if using it.",
+        "Stir in cooked chickpeas and pasta, warming thoroughly. Add a splash of water if needed."
+      ],
+      "art": 8
+    },
+    {
+      "id": "recipe-82",
+      "name": "Cauliflower Chickpea Pasta",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Dinner",
+      "prep": 10,
+      "cook": 15,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Plant Based",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "pasta",
+          "grams": 180
+        },
+        {
+          "id": "chickpeas",
+          "grams": 90
+        },
+        {
+          "id": "cauliflower",
+          "grams": 100
+        },
+        {
+          "id": "tomato",
+          "grams": 100
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        },
+        {
+          "id": "garlic",
+          "grams": 3
+        }
+      ],
+      "instructions": [
+        "Prepare cooked wholewheat pasta; wash and chop vegetables and tomatoes.",
+        "Warm oil in a pan, add minced garlic, and stir for 30 seconds.",
+        "Add tomatoes and vegetables; simmer until tender. Keep cucumber raw and add at serving if using it.",
+        "Stir in cooked chickpeas and pasta, warming thoroughly. Add a splash of water if needed."
+      ],
+      "art": 8
+    },
+    {
+      "id": "recipe-83",
+      "name": "Carrot Chickpea Pasta",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Dinner",
+      "prep": 10,
+      "cook": 15,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Plant Based",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "pasta",
+          "grams": 180
+        },
+        {
+          "id": "chickpeas",
+          "grams": 90
+        },
+        {
+          "id": "carrot",
+          "grams": 100
+        },
+        {
+          "id": "tomato",
+          "grams": 100
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        },
+        {
+          "id": "garlic",
+          "grams": 3
+        }
+      ],
+      "instructions": [
+        "Prepare cooked wholewheat pasta; wash and chop vegetables and tomatoes.",
+        "Warm oil in a pan, add minced garlic, and stir for 30 seconds.",
+        "Add tomatoes and vegetables; simmer until tender. Keep cucumber raw and add at serving if using it.",
+        "Stir in cooked chickpeas and pasta, warming thoroughly. Add a splash of water if needed."
+      ],
+      "art": 8
+    },
+    {
+      "id": "recipe-84",
+      "name": "Sweet pepper Chickpea Pasta",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Dinner",
+      "prep": 10,
+      "cook": 15,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Plant Based",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "pasta",
+          "grams": 180
+        },
+        {
+          "id": "chickpeas",
+          "grams": 90
+        },
+        {
+          "id": "pepper",
+          "grams": 100
+        },
+        {
+          "id": "tomato",
+          "grams": 100
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        },
+        {
+          "id": "garlic",
+          "grams": 3
+        }
+      ],
+      "instructions": [
+        "Prepare cooked wholewheat pasta; wash and chop vegetables and tomatoes.",
+        "Warm oil in a pan, add minced garlic, and stir for 30 seconds.",
+        "Add tomatoes and vegetables; simmer until tender. Keep cucumber raw and add at serving if using it.",
+        "Stir in cooked chickpeas and pasta, warming thoroughly. Add a splash of water if needed."
+      ],
+      "art": 8
+    },
+    {
+      "id": "recipe-85",
+      "name": "Tomato Chickpea Pasta",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Dinner",
+      "prep": 10,
+      "cook": 15,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Plant Based",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "pasta",
+          "grams": 180
+        },
+        {
+          "id": "chickpeas",
+          "grams": 90
+        },
+        {
+          "id": "tomato",
+          "grams": 100
+        },
+        {
+          "id": "tomato",
+          "grams": 100
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        },
+        {
+          "id": "garlic",
+          "grams": 3
+        }
+      ],
+      "instructions": [
+        "Prepare cooked wholewheat pasta; wash and chop vegetables and tomatoes.",
+        "Warm oil in a pan, add minced garlic, and stir for 30 seconds.",
+        "Add tomatoes and vegetables; simmer until tender. Keep cucumber raw and add at serving if using it.",
+        "Stir in cooked chickpeas and pasta, warming thoroughly. Add a splash of water if needed."
+      ],
+      "art": 8
+    },
+    {
+      "id": "recipe-86",
+      "name": "Spinach Chickpea Pasta",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Dinner",
+      "prep": 10,
+      "cook": 15,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Plant Based",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "pasta",
+          "grams": 180
+        },
+        {
+          "id": "chickpeas",
+          "grams": 90
+        },
+        {
+          "id": "spinach",
+          "grams": 100
+        },
+        {
+          "id": "tomato",
+          "grams": 100
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        },
+        {
+          "id": "garlic",
+          "grams": 3
+        }
+      ],
+      "instructions": [
+        "Prepare cooked wholewheat pasta; wash and chop vegetables and tomatoes.",
+        "Warm oil in a pan, add minced garlic, and stir for 30 seconds.",
+        "Add tomatoes and vegetables; simmer until tender. Keep cucumber raw and add at serving if using it.",
+        "Stir in cooked chickpeas and pasta, warming thoroughly. Add a splash of water if needed."
+      ],
+      "art": 8
+    },
+    {
+      "id": "recipe-87",
+      "name": "Kale Chickpea Pasta",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Dinner",
+      "prep": 10,
+      "cook": 15,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Plant Based",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "pasta",
+          "grams": 180
+        },
+        {
+          "id": "chickpeas",
+          "grams": 90
+        },
+        {
+          "id": "kale",
+          "grams": 100
+        },
+        {
+          "id": "tomato",
+          "grams": 100
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        },
+        {
+          "id": "garlic",
+          "grams": 3
+        }
+      ],
+      "instructions": [
+        "Prepare cooked wholewheat pasta; wash and chop vegetables and tomatoes.",
+        "Warm oil in a pan, add minced garlic, and stir for 30 seconds.",
+        "Add tomatoes and vegetables; simmer until tender. Keep cucumber raw and add at serving if using it.",
+        "Stir in cooked chickpeas and pasta, warming thoroughly. Add a splash of water if needed."
+      ],
+      "art": 8
+    },
+    {
+      "id": "recipe-88",
+      "name": "Sweet potato Chickpea Pasta",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Dinner",
+      "prep": 10,
+      "cook": 15,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Plant Based",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "pasta",
+          "grams": 180
+        },
+        {
+          "id": "chickpeas",
+          "grams": 90
+        },
+        {
+          "id": "sweetpotato",
+          "grams": 100
+        },
+        {
+          "id": "tomato",
+          "grams": 100
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        },
+        {
+          "id": "garlic",
+          "grams": 3
+        }
+      ],
+      "instructions": [
+        "Prepare cooked wholewheat pasta; wash and chop vegetables and tomatoes.",
+        "Warm oil in a pan, add minced garlic, and stir for 30 seconds.",
+        "Add tomatoes and vegetables; simmer until tender. Keep cucumber raw and add at serving if using it.",
+        "Stir in cooked chickpeas and pasta, warming thoroughly. Add a splash of water if needed."
+      ],
+      "art": 8
+    },
+    {
+      "id": "recipe-89",
+      "name": "Cucumber Chickpea Pasta",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Dinner",
+      "prep": 10,
+      "cook": 15,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Plant Based",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "pasta",
+          "grams": 180
+        },
+        {
+          "id": "chickpeas",
+          "grams": 90
+        },
+        {
+          "id": "cucumber",
+          "grams": 100
+        },
+        {
+          "id": "tomato",
+          "grams": 100
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        },
+        {
+          "id": "garlic",
+          "grams": 3
+        }
+      ],
+      "instructions": [
+        "Prepare cooked wholewheat pasta; wash and chop vegetables and tomatoes.",
+        "Warm oil in a pan, add minced garlic, and stir for 30 seconds.",
+        "Add tomatoes and vegetables; simmer until tender. Keep cucumber raw and add at serving if using it.",
+        "Stir in cooked chickpeas and pasta, warming thoroughly. Add a splash of water if needed."
+      ],
+      "art": 8
+    },
+    {
+      "id": "recipe-90",
+      "name": "Potato Chickpea Pasta",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Dinner",
+      "prep": 10,
+      "cook": 15,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Plant Based",
+        "High Fiber",
+        "Protein Forward"
+      ],
+      "ingredients": [
+        {
+          "id": "pasta",
+          "grams": 180
+        },
+        {
+          "id": "chickpeas",
+          "grams": 90
+        },
+        {
+          "id": "potato",
+          "grams": 100
+        },
+        {
+          "id": "tomato",
+          "grams": 100
+        },
+        {
+          "id": "oil",
+          "grams": 5
+        },
+        {
+          "id": "garlic",
+          "grams": 3
+        }
+      ],
+      "instructions": [
+        "Prepare cooked wholewheat pasta; wash and chop vegetables and tomatoes.",
+        "Warm oil in a pan, add minced garlic, and stir for 30 seconds.",
+        "Add tomatoes and vegetables; simmer until tender. Keep cucumber raw and add at serving if using it.",
+        "Stir in cooked chickpeas and pasta, warming thoroughly. Add a splash of water if needed."
+      ],
+      "art": 8
+    },
+    {
+      "id": "recipe-91",
+      "name": "Blueberry & Almond Snack Plate",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Snack",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Under 15 Minutes",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "blueberry",
+          "grams": 150
+        },
+        {
+          "id": "almond",
+          "grams": 20
+        },
+        {
+          "id": "yogurt",
+          "grams": 80
+        }
+      ],
+      "instructions": [
+        "Wash and prepare the fruit, peeling or removing pits as needed.",
+        "Arrange the fruit, almonds, and yogurt on a small plate.",
+        "Enjoy as a snack. Substitute another listed fruit or seed if desired."
+      ],
+      "art": 9
+    },
+    {
+      "id": "recipe-92",
+      "name": "Raspberry & Almond Snack Plate",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Snack",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Under 15 Minutes",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "raspberry",
+          "grams": 150
+        },
+        {
+          "id": "almond",
+          "grams": 20
+        },
+        {
+          "id": "yogurt",
+          "grams": 80
+        }
+      ],
+      "instructions": [
+        "Wash and prepare the fruit, peeling or removing pits as needed.",
+        "Arrange the fruit, almonds, and yogurt on a small plate.",
+        "Enjoy as a snack. Substitute another listed fruit or seed if desired."
+      ],
+      "art": 9
+    },
+    {
+      "id": "recipe-93",
+      "name": "Strawberry & Almond Snack Plate",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Snack",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Under 15 Minutes"
+      ],
+      "ingredients": [
+        {
+          "id": "strawberry",
+          "grams": 150
+        },
+        {
+          "id": "almond",
+          "grams": 20
+        },
+        {
+          "id": "yogurt",
+          "grams": 80
+        }
+      ],
+      "instructions": [
+        "Wash and prepare the fruit, peeling or removing pits as needed.",
+        "Arrange the fruit, almonds, and yogurt on a small plate.",
+        "Enjoy as a snack. Substitute another listed fruit or seed if desired."
+      ],
+      "art": 9
+    },
+    {
+      "id": "recipe-94",
+      "name": "Kiwi & Almond Snack Plate",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Snack",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Under 15 Minutes",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "kiwi",
+          "grams": 150
+        },
+        {
+          "id": "almond",
+          "grams": 20
+        },
+        {
+          "id": "yogurt",
+          "grams": 80
+        }
+      ],
+      "instructions": [
+        "Wash and prepare the fruit, peeling or removing pits as needed.",
+        "Arrange the fruit, almonds, and yogurt on a small plate.",
+        "Enjoy as a snack. Substitute another listed fruit or seed if desired."
+      ],
+      "art": 9
+    },
+    {
+      "id": "recipe-95",
+      "name": "Banana & Almond Snack Plate",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Snack",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Under 15 Minutes",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "banana",
+          "grams": 150
+        },
+        {
+          "id": "almond",
+          "grams": 20
+        },
+        {
+          "id": "yogurt",
+          "grams": 80
+        }
+      ],
+      "instructions": [
+        "Wash and prepare the fruit, peeling or removing pits as needed.",
+        "Arrange the fruit, almonds, and yogurt on a small plate.",
+        "Enjoy as a snack. Substitute another listed fruit or seed if desired."
+      ],
+      "art": 9
+    },
+    {
+      "id": "recipe-96",
+      "name": "Mango & Almond Snack Plate",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Snack",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Under 15 Minutes"
+      ],
+      "ingredients": [
+        {
+          "id": "mango",
+          "grams": 150
+        },
+        {
+          "id": "almond",
+          "grams": 20
+        },
+        {
+          "id": "yogurt",
+          "grams": 80
+        }
+      ],
+      "instructions": [
+        "Wash and prepare the fruit, peeling or removing pits as needed.",
+        "Arrange the fruit, almonds, and yogurt on a small plate.",
+        "Enjoy as a snack. Substitute another listed fruit or seed if desired."
+      ],
+      "art": 9
+    },
+    {
+      "id": "recipe-97",
+      "name": "Apple & Almond Snack Plate",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Snack",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Under 15 Minutes",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "apple",
+          "grams": 150
+        },
+        {
+          "id": "almond",
+          "grams": 20
+        },
+        {
+          "id": "yogurt",
+          "grams": 80
+        }
+      ],
+      "instructions": [
+        "Wash and prepare the fruit, peeling or removing pits as needed.",
+        "Arrange the fruit, almonds, and yogurt on a small plate.",
+        "Enjoy as a snack. Substitute another listed fruit or seed if desired."
+      ],
+      "art": 9
+    },
+    {
+      "id": "recipe-98",
+      "name": "Pear & Almond Snack Plate",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Snack",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Under 15 Minutes",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "pear",
+          "grams": 150
+        },
+        {
+          "id": "almond",
+          "grams": 20
+        },
+        {
+          "id": "yogurt",
+          "grams": 80
+        }
+      ],
+      "instructions": [
+        "Wash and prepare the fruit, peeling or removing pits as needed.",
+        "Arrange the fruit, almonds, and yogurt on a small plate.",
+        "Enjoy as a snack. Substitute another listed fruit or seed if desired."
+      ],
+      "art": 9
+    },
+    {
+      "id": "recipe-99",
+      "name": "Orange & Almond Snack Plate",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Snack",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Under 15 Minutes",
+        "High Fiber"
+      ],
+      "ingredients": [
+        {
+          "id": "orange",
+          "grams": 150
+        },
+        {
+          "id": "almond",
+          "grams": 20
+        },
+        {
+          "id": "yogurt",
+          "grams": 80
+        }
+      ],
+      "instructions": [
+        "Wash and prepare the fruit, peeling or removing pits as needed.",
+        "Arrange the fruit, almonds, and yogurt on a small plate.",
+        "Enjoy as a snack. Substitute another listed fruit or seed if desired."
+      ],
+      "art": 9
+    },
+    {
+      "id": "recipe-100",
+      "name": "Peach & Almond Snack Plate",
+      "description": "A simple, flexible recipe for an ordinary day. Choose the ingredients that work for you.",
+      "meal": "Snack",
+      "prep": 5,
+      "cook": 0,
+      "difficulty": "Easy",
+      "servings": 1,
+      "tags": [
+        "Budget Friendly",
+        "Under 15 Minutes"
+      ],
+      "ingredients": [
+        {
+          "id": "peach",
+          "grams": 150
+        },
+        {
+          "id": "almond",
+          "grams": 20
+        },
+        {
+          "id": "yogurt",
+          "grams": 80
+        }
+      ],
+      "instructions": [
+        "Wash and prepare the fruit, peeling or removing pits as needed.",
+        "Arrange the fruit, almonds, and yogurt on a small plate.",
+        "Enjoy as a snack. Substitute another listed fruit or seed if desired."
+      ],
+      "art": 9
+    }
+  ],
+  "ingredients": {
+    "yogurt": {
+      "id": "yogurt",
+      "name": "Plain Greek yogurt",
+      "grams": 100,
+      "kcal": 59,
+      "protein": 10,
+      "carbs": 3.6,
+      "fat": 0.4,
+      "fiber": 0,
+      "swaps": [
+        "cottage",
+        "plantyogurt"
+      ]
+    },
+    "cottage": {
+      "id": "cottage",
+      "name": "Cottage cheese",
+      "grams": 100,
+      "kcal": 98,
+      "protein": 11,
+      "carbs": 3.4,
+      "fat": 4.3,
+      "fiber": 0,
+      "swaps": [
+        "yogurt",
+        "plantyogurt"
+      ]
+    },
+    "plantyogurt": {
+      "id": "plantyogurt",
+      "name": "Unsweetened soy yogurt",
+      "grams": 100,
+      "kcal": 66,
+      "protein": 4,
+      "carbs": 3,
+      "fat": 3.5,
+      "fiber": 0.6,
+      "swaps": [
+        "yogurt",
+        "cottage"
+      ]
+    },
+    "oats": {
+      "id": "oats",
+      "name": "Rolled oats",
+      "grams": 100,
+      "kcal": 389,
+      "protein": 17,
+      "carbs": 66,
+      "fat": 7,
+      "fiber": 10,
+      "swaps": [
+        "quinoa"
+      ]
+    },
+    "quinoa": {
+      "id": "quinoa",
+      "name": "Cooked quinoa",
+      "grams": 100,
+      "kcal": 120,
+      "protein": 4.4,
+      "carbs": 21,
+      "fat": 1.9,
+      "fiber": 2.8,
+      "swaps": [
+        "rice"
+      ]
+    },
+    "rice": {
+      "id": "rice",
+      "name": "Cooked brown rice",
+      "grams": 100,
+      "kcal": 123,
+      "protein": 2.7,
+      "carbs": 26,
+      "fat": 1,
+      "fiber": 1.6,
+      "swaps": [
+        "quinoa"
+      ]
+    },
+    "chickpeas": {
+      "id": "chickpeas",
+      "name": "Cooked chickpeas",
+      "grams": 100,
+      "kcal": 164,
+      "protein": 8.9,
+      "carbs": 27,
+      "fat": 2.6,
+      "fiber": 7.6,
+      "swaps": [
+        "lentils",
+        "beans"
+      ]
+    },
+    "lentils": {
+      "id": "lentils",
+      "name": "Cooked lentils",
+      "grams": 100,
+      "kcal": 116,
+      "protein": 9,
+      "carbs": 20,
+      "fat": 0.4,
+      "fiber": 7.9,
+      "swaps": [
+        "chickpeas",
+        "beans"
+      ]
+    },
+    "beans": {
+      "id": "beans",
+      "name": "Cooked black beans",
+      "grams": 100,
+      "kcal": 132,
+      "protein": 8.9,
+      "carbs": 24,
+      "fat": 0.5,
+      "fiber": 8.7,
+      "swaps": [
+        "chickpeas",
+        "lentils"
+      ]
+    },
+    "tofu": {
+      "id": "tofu",
+      "name": "Firm tofu",
+      "grams": 100,
+      "kcal": 144,
+      "protein": 17,
+      "carbs": 3,
+      "fat": 9,
+      "fiber": 2.3,
+      "swaps": [
+        "chickpeas"
+      ]
+    },
+    "egg": {
+      "id": "egg",
+      "name": "Egg",
+      "grams": 100,
+      "kcal": 143,
+      "protein": 13,
+      "carbs": 0.7,
+      "fat": 9.5,
+      "fiber": 0,
+      "swaps": [
+        "tofu"
+      ]
+    },
+    "chicken": {
+      "id": "chicken",
+      "name": "Cooked chicken breast",
+      "grams": 100,
+      "kcal": 165,
+      "protein": 31,
+      "carbs": 0,
+      "fat": 3.6,
+      "fiber": 0,
+      "swaps": [
+        "tofu"
+      ]
+    },
+    "salmon": {
+      "id": "salmon",
+      "name": "Cooked salmon",
+      "grams": 100,
+      "kcal": 206,
+      "protein": 22,
+      "carbs": 0,
+      "fat": 12,
+      "fiber": 0,
+      "swaps": [
+        "tofu"
+      ]
+    },
+    "spinach": {
+      "id": "spinach",
+      "name": "Spinach",
+      "grams": 100,
+      "kcal": 23,
+      "protein": 2.9,
+      "carbs": 3.6,
+      "fat": 0.4,
+      "fiber": 2.2,
+      "swaps": [
+        "kale"
+      ]
+    },
+    "kale": {
+      "id": "kale",
+      "name": "Kale",
+      "grams": 100,
+      "kcal": 35,
+      "protein": 2.9,
+      "carbs": 4.4,
+      "fat": 1.5,
+      "fiber": 4.1,
+      "swaps": [
+        "spinach"
+      ]
+    },
+    "broccoli": {
+      "id": "broccoli",
+      "name": "Broccoli",
+      "grams": 100,
+      "kcal": 34,
+      "protein": 2.8,
+      "carbs": 7,
+      "fat": 0.4,
+      "fiber": 2.6,
+      "swaps": [
+        "cauliflower"
+      ]
+    },
+    "cauliflower": {
+      "id": "cauliflower",
+      "name": "Cauliflower",
+      "grams": 100,
+      "kcal": 25,
+      "protein": 1.9,
+      "carbs": 5,
+      "fat": 0.3,
+      "fiber": 2,
+      "swaps": [
+        "broccoli"
+      ]
+    },
+    "carrot": {
+      "id": "carrot",
+      "name": "Carrot",
+      "grams": 100,
+      "kcal": 41,
+      "protein": 0.9,
+      "carbs": 10,
+      "fat": 0.2,
+      "fiber": 2.8,
+      "swaps": [
+        "pepper"
+      ]
+    },
+    "pepper": {
+      "id": "pepper",
+      "name": "Sweet pepper",
+      "grams": 100,
+      "kcal": 31,
+      "protein": 1,
+      "carbs": 6,
+      "fat": 0.3,
+      "fiber": 2.1,
+      "swaps": [
+        "carrot"
+      ]
+    },
+    "tomato": {
+      "id": "tomato",
+      "name": "Tomato",
+      "grams": 100,
+      "kcal": 18,
+      "protein": 0.9,
+      "carbs": 3.9,
+      "fat": 0.2,
+      "fiber": 1.2,
+      "swaps": [
+        "pepper"
+      ]
+    },
+    "cucumber": {
+      "id": "cucumber",
+      "name": "Cucumber",
+      "grams": 100,
+      "kcal": 15,
+      "protein": 0.7,
+      "carbs": 3.6,
+      "fat": 0.1,
+      "fiber": 0.5,
+      "swaps": [
+        "tomato"
+      ]
+    },
+    "sweetpotato": {
+      "id": "sweetpotato",
+      "name": "Sweet potato",
+      "grams": 100,
+      "kcal": 86,
+      "protein": 1.6,
+      "carbs": 20,
+      "fat": 0.1,
+      "fiber": 3,
+      "swaps": [
+        "potato"
+      ]
+    },
+    "potato": {
+      "id": "potato",
+      "name": "Potato",
+      "grams": 100,
+      "kcal": 77,
+      "protein": 2,
+      "carbs": 17,
+      "fat": 0.1,
+      "fiber": 2.2,
+      "swaps": [
+        "sweetpotato"
+      ]
+    },
+    "avocado": {
+      "id": "avocado",
+      "name": "Avocado",
+      "grams": 100,
+      "kcal": 160,
+      "protein": 2,
+      "carbs": 8.5,
+      "fat": 15,
+      "fiber": 6.7,
+      "swaps": [
+        "hummus"
+      ]
+    },
+    "hummus": {
+      "id": "hummus",
+      "name": "Hummus",
+      "grams": 100,
+      "kcal": 166,
+      "protein": 8,
+      "carbs": 14,
+      "fat": 10,
+      "fiber": 6,
+      "swaps": [
+        "avocado"
+      ]
+    },
+    "blueberry": {
+      "id": "blueberry",
+      "name": "Blueberries",
+      "grams": 100,
+      "kcal": 57,
+      "protein": 0.7,
+      "carbs": 14.5,
+      "fat": 0.3,
+      "fiber": 2.4,
+      "swaps": [
+        "raspberry",
+        "strawberry",
+        "kiwi"
+      ]
+    },
+    "raspberry": {
+      "id": "raspberry",
+      "name": "Raspberries",
+      "grams": 100,
+      "kcal": 52,
+      "protein": 1.2,
+      "carbs": 12,
+      "fat": 0.7,
+      "fiber": 6.5,
+      "swaps": [
+        "blueberry",
+        "strawberry"
+      ]
+    },
+    "strawberry": {
+      "id": "strawberry",
+      "name": "Strawberries",
+      "grams": 100,
+      "kcal": 32,
+      "protein": 0.7,
+      "carbs": 7.7,
+      "fat": 0.3,
+      "fiber": 2,
+      "swaps": [
+        "blueberry",
+        "kiwi"
+      ]
+    },
+    "kiwi": {
+      "id": "kiwi",
+      "name": "Kiwi",
+      "grams": 100,
+      "kcal": 61,
+      "protein": 1.1,
+      "carbs": 15,
+      "fat": 0.5,
+      "fiber": 3,
+      "swaps": [
+        "strawberry"
+      ]
+    },
+    "banana": {
+      "id": "banana",
+      "name": "Banana",
+      "grams": 100,
+      "kcal": 89,
+      "protein": 1.1,
+      "carbs": 23,
+      "fat": 0.3,
+      "fiber": 2.6,
+      "swaps": [
+        "mango"
+      ]
+    },
+    "mango": {
+      "id": "mango",
+      "name": "Mango",
+      "grams": 100,
+      "kcal": 60,
+      "protein": 0.8,
+      "carbs": 15,
+      "fat": 0.4,
+      "fiber": 1.6,
+      "swaps": [
+        "banana"
+      ]
+    },
+    "apple": {
+      "id": "apple",
+      "name": "Apple",
+      "grams": 100,
+      "kcal": 52,
+      "protein": 0.3,
+      "carbs": 14,
+      "fat": 0.2,
+      "fiber": 2.4,
+      "swaps": [
+        "pear"
+      ]
+    },
+    "pear": {
+      "id": "pear",
+      "name": "Pear",
+      "grams": 100,
+      "kcal": 57,
+      "protein": 0.4,
+      "carbs": 15,
+      "fat": 0.1,
+      "fiber": 3.1,
+      "swaps": [
+        "apple"
+      ]
+    },
+    "orange": {
+      "id": "orange",
+      "name": "Orange",
+      "grams": 100,
+      "kcal": 47,
+      "protein": 0.9,
+      "carbs": 12,
+      "fat": 0.1,
+      "fiber": 2.4,
+      "swaps": [
+        "kiwi"
+      ]
+    },
+    "peach": {
+      "id": "peach",
+      "name": "Peach",
+      "grams": 100,
+      "kcal": 39,
+      "protein": 0.9,
+      "carbs": 9.5,
+      "fat": 0.3,
+      "fiber": 1.5,
+      "swaps": [
+        "mango"
+      ]
+    },
+    "chia": {
+      "id": "chia",
+      "name": "Chia seeds",
+      "grams": 100,
+      "kcal": 486,
+      "protein": 17,
+      "carbs": 42,
+      "fat": 31,
+      "fiber": 34,
+      "swaps": [
+        "flax",
+        "hemp"
+      ]
+    },
+    "flax": {
+      "id": "flax",
+      "name": "Ground flax",
+      "grams": 100,
+      "kcal": 534,
+      "protein": 18,
+      "carbs": 29,
+      "fat": 42,
+      "fiber": 27,
+      "swaps": [
+        "chia",
+        "hemp"
+      ]
+    },
+    "hemp": {
+      "id": "hemp",
+      "name": "Hemp hearts",
+      "grams": 100,
+      "kcal": 553,
+      "protein": 32,
+      "carbs": 9,
+      "fat": 49,
+      "fiber": 4,
+      "swaps": [
+        "chia",
+        "flax"
+      ]
+    },
+    "almond": {
+      "id": "almond",
+      "name": "Almonds",
+      "grams": 100,
+      "kcal": 579,
+      "protein": 21,
+      "carbs": 22,
+      "fat": 50,
+      "fiber": 12.5,
+      "swaps": [
+        "walnut"
+      ]
+    },
+    "walnut": {
+      "id": "walnut",
+      "name": "Walnuts",
+      "grams": 100,
+      "kcal": 654,
+      "protein": 15,
+      "carbs": 14,
+      "fat": 65,
+      "fiber": 6.7,
+      "swaps": [
+        "almond"
+      ]
+    },
+    "oil": {
+      "id": "oil",
+      "name": "Olive oil",
+      "grams": 100,
+      "kcal": 884,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 100,
+      "fiber": 0,
+      "swaps": []
+    },
+    "lemon": {
+      "id": "lemon",
+      "name": "Lemon juice",
+      "grams": 100,
+      "kcal": 22,
+      "protein": 0.4,
+      "carbs": 7,
+      "fat": 0.2,
+      "fiber": 0.3,
+      "swaps": [
+        "lime"
+      ]
+    },
+    "lime": {
+      "id": "lime",
+      "name": "Lime juice",
+      "grams": 100,
+      "kcal": 25,
+      "protein": 0.4,
+      "carbs": 8,
+      "fat": 0.1,
+      "fiber": 0.4,
+      "swaps": [
+        "lemon"
+      ]
+    },
+    "milk": {
+      "id": "milk",
+      "name": "Unsweetened soy milk",
+      "grams": 100,
+      "kcal": 33,
+      "protein": 2.9,
+      "carbs": 1.7,
+      "fat": 1.8,
+      "fiber": 0.5,
+      "swaps": [
+        "plantyogurt"
+      ]
+    },
+    "bread": {
+      "id": "bread",
+      "name": "Wholegrain bread",
+      "grams": 100,
+      "kcal": 247,
+      "protein": 13,
+      "carbs": 41,
+      "fat": 4,
+      "fiber": 7,
+      "swaps": [
+        "tortilla"
+      ]
+    },
+    "tortilla": {
+      "id": "tortilla",
+      "name": "Wholegrain tortilla",
+      "grams": 100,
+      "kcal": 312,
+      "protein": 9,
+      "carbs": 52,
+      "fat": 8,
+      "fiber": 7,
+      "swaps": [
+        "bread"
+      ]
+    },
+    "pasta": {
+      "id": "pasta",
+      "name": "Cooked wholewheat pasta",
+      "grams": 100,
+      "kcal": 149,
+      "protein": 6,
+      "carbs": 30,
+      "fat": 1.7,
+      "fiber": 3.9,
+      "swaps": [
+        "quinoa"
+      ]
+    },
+    "onion": {
+      "id": "onion",
+      "name": "Onion",
+      "grams": 100,
+      "kcal": 40,
+      "protein": 1.1,
+      "carbs": 9.3,
+      "fat": 0.1,
+      "fiber": 1.7,
+      "swaps": []
+    },
+    "garlic": {
+      "id": "garlic",
+      "name": "Garlic",
+      "grams": 100,
+      "kcal": 149,
+      "protein": 6.4,
+      "carbs": 33,
+      "fat": 0.5,
+      "fiber": 2.1,
+      "swaps": []
+    },
+    "water": {
+      "id": "water",
+      "name": "Water",
+      "grams": 100,
+      "kcal": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "fiber": 0,
+      "swaps": []
+    }
+  }
+}

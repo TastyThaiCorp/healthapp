@@ -1,0 +1,8 @@
+export type Section='landing'|'today'|'calendar'|'food'|'journey'|'mind'|'progress'|'learn'|'settings';
+export type Category='nutrition'|'hydration'|'movement'|'mindfulness'|'sleep'|'selfcare';
+export interface Ingredient {id:string;name:string;grams:number;kcal:number;protein:number;carbs:number;fat:number;fiber:number;swaps:string[]}
+export interface Recipe {id:string;name:string;description:string;meal:string;prep:number;cook:number;rest?:number;difficulty:string;servings:number;tags:string[];ingredients:{id:string;grams:number}[];instructions:string[];art:number}
+export interface CalendarEvent {id:string;title:string;type:string;date:string;time:string;duration:number;repeat:'none'|'daily'|'weekly';completed:string[];excluded:string[]}
+export interface WeightEntry{id:string;date:string;kg:number}
+export interface MoodEntry{id:string;date:string;mood:number;energy?:number;stress?:number;hunger?:number;sleep?:number;note:string}
+export interface State {profile:{name:string;start:string;onboarded:boolean};preferences:{categories:Category[];weightEnabled:boolean;units:'metric'|'imperial';waterTarget:number;wake:string;sleep:string;reminderMinutes:number;goalKg:number|null;mealTarget:number;supportRegion:string;playEnabled:boolean};hydration:{id:string;date:string;ml:number}[];weight_entries:WeightEntry[];moods:MoodEntry[];completed_tasks:{id:string;date:string;category:Category;label:string}[];favorites:string[];calendar_events:CalendarEvent[];journey:{mode:'guided'|'pace'|'surprise';completed:number[];selected:number};notification_preferences:{enabled:boolean};intentions:Record<string,string>;reflections:Record<string,string>;meals:{id:string;date:string;name:string}[];timer:{endsAt:number;duration:number;kind:string}|null}

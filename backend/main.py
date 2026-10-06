@@ -1,125 +1,142 @@
-"""Small contact API backed by SQLite on a Railway persistent volume."""
-import hashlib
+"""HealthUp public content adapters. Personal health logs remain browser-local."""
+import asyncio
 import json
 import os
-import sqlite3
 import time
-from contextlib import asynccontextmanager
-from datetime import datetime, timezone
 from pathlib import Path
-from uuid import UUID, uuid4
+from typing import Any
 
-from fastapi import FastAPI, HTTPException, Request
+import httpx
+from fastapi import FastAPI, HTTPException, Query, Request
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel, ConfigDict, EmailStr, Field, field_validator
+from fastapi.responses import FileResponse, JSONResponse
+from fastapi.staticfiles import StaticFiles
 
-DB_PATH = Path(os.environ.get('DATABASE_PATH', './data/inquiries.sqlite3'))
-ORIGINS = [origin.strip().rstrip('/') for origin in os.environ.get(
-    'ALLOWED_ORIGINS', '').split(',') if origin.strip()]
-if '*' in ORIGINS:
-    raise RuntimeError('ALLOWED_ORIGINS must contain explicit origins.')
-
-
-def connect():
-    db = sqlite3.connect(DB_PATH, timeout=10)
-    db.execute('PRAGMA journal_mode=WAL')
-    return db
-
-
-@asynccontextmanager
-async def lifespan(app):
-    if os.environ.get('RAILWAY_ENVIRONMENT_ID') and not os.environ.get('RAILWAY_VOLUME_MOUNT_PATH'):
-        raise RuntimeError('Attach a persistent Railway volume before accepting inquiries.')
-    DB_PATH.parent.mkdir(parents=True, exist_ok=True)
-    with connect() as db:
-        db.execute('''CREATE TABLE IF NOT EXISTS inquiries (
-            id TEXT PRIMARY KEY, digest TEXT NOT NULL, payload TEXT NOT NULL,
-            email TEXT NOT NULL, created_at INTEGER NOT NULL)''')
-        db.execute('CREATE INDEX IF NOT EXISTS email_time ON inquiries(email, created_at)')
-    yield
-
-
-app = FastAPI(title='HealthUp Contact API', lifespan=lifespan, docs_url=None, redoc_url=None)
-app.add_middleware(CORSMiddleware, allow_origins=ORIGINS, allow_credentials=False,
-                   allow_methods=['POST', 'GET'], allow_headers=['Content-Type', 'Accept'],
-                   max_age=600)
+ROOT = Path(__file__).parent
+app = FastAPI(title='HealthUp', docs_url='/api/docs', openapi_url='/api/openapi.json')
+origins = [o.strip().rstrip('/') for o in os.getenv('ALLOWED_ORIGINS', 'https://tastythaicorp.github.io').split(',') if o.strip()]
+app.add_middleware(CORSMiddleware, allow_origins=origins, allow_credentials=False,
+                   allow_methods=['GET'], allow_headers=['Accept', 'Content-Type'], max_age=600)
+cache: dict[str, tuple[float, Any]] = {}
+locks: dict[str, asyncio.Lock] = {}
+entrez_lock = asyncio.Lock()
+entrez_next = 0.0
 
 
 @app.middleware('http')
-async def guard(request: Request, call_next):
-    from starlette.responses import JSONResponse
-    if request.method == 'POST':
-        origin = request.headers.get('origin')
-        if origin and origin not in ORIGINS:
-            return JSONResponse({'detail': 'Origin not allowed.'}, status_code=403)
-        if request.headers.get('content-type', '').split(';')[0].strip() != 'application/json':
-            return JSONResponse({'detail': 'JSON required.'}, status_code=415)
-        # Read at most 16 KiB, including requests without Content-Length.
-        body = bytearray()
-        async for chunk in request.stream():
-            body.extend(chunk)
-            if len(body) > 16384:
-                return JSONResponse({'detail': 'Request too large.'}, status_code=413)
-        request._body = bytes(body)
+async def response_headers(request: Request, call_next):
     response = await call_next(request)
-    response.headers['Cache-Control'] = 'no-store'
     response.headers['X-Content-Type-Options'] = 'nosniff'
+    response.headers['Referrer-Policy'] = 'strict-origin-when-cross-origin'
+    response.headers['X-Frame-Options'] = 'DENY'
     return response
 
 
-class IntegrationBrief(BaseModel):
-    model_config = ConfigDict(extra='forbid', str_strip_whitespace=True)
-    name: str = Field(min_length=1, max_length=100)
-    email: EmailStr = Field(max_length=254)
-    brief: str = Field(min_length=10, max_length=5000)
-    interest: str = Field(default='General collaboration', max_length=100)
-    request_id: UUID
-    website: str = Field(default='', max_length=200)
-
-    @field_validator('name', 'brief')
-    @classmethod
-    def nonblank(cls, value):
-        if not value.strip():
-            raise ValueError('Must not be blank.')
-        return value
+def bundled(name):
+    return json.loads((ROOT / 'data' / name).read_text())
 
 
-@app.get('/health')
+async def fetch_json(url, params):
+    async with httpx.AsyncClient(timeout=7, follow_redirects=False) as client:
+        try:
+            response = await client.get(url, params=params)
+            response.raise_for_status()
+            return response.json()
+        except (httpx.HTTPError, ValueError):
+            raise HTTPException(503, 'Live service unavailable. Cached and bundled content remain available.') from None
+
+
+async def cached(key, loader):
+    if key in cache and cache[key][0] > time.time():
+        return cache[key][1]
+    # Limit memory by expiring old entries and bounding the query cache.
+    for expired in [k for k, v in cache.items() if v[0] < time.time()]:
+        cache.pop(expired, None)
+    if len(cache) >= 128:
+        cache.pop(next(iter(cache)))
+    data = await loader()
+    cache[key] = (time.time() + 3600, data)
+    return data
+
+
+@app.get('/api/health')
 def health():
-    try:
-        with connect() as db:
-            db.execute('SELECT 1 FROM inquiries LIMIT 1')
-    except sqlite3.Error:
-        raise HTTPException(503, 'Storage unavailable.') from None
-    return {'status': 'ok', 'app': 'HealthUp'}
+    return {'status': 'ok', 'product': 'HealthUp'}
 
 
-@app.post('/api/integrate', status_code=201)
-def integrate(data: IntegrationBrief):
-    if data.website:
-        raise HTTPException(422, 'Unable to accept this inquiry.')
-    payload = data.model_dump(mode='json', exclude={'request_id', 'website'})
-    payload['email'] = str(data.email).lower()
-    encoded = json.dumps(payload, sort_keys=True)
-    digest = hashlib.sha256(encoded.encode()).hexdigest()
-    now = int(time.time())
-    key = str(data.request_id)
-    try:
-        with connect() as db:
-            db.execute('BEGIN IMMEDIATE')
-            # Contact records expire after 30 days; cleanup runs on new submissions.
-            db.execute('DELETE FROM inquiries WHERE created_at < ?', (now - 30*86400,))
-            previous = db.execute('SELECT digest FROM inquiries WHERE id = ?', (key,)).fetchone()
-            if previous:
-                if previous[0] != digest:
-                    raise HTTPException(409, 'Request identifier already used for a different inquiry.')
-                return {'status': 'received', 'inquiry_id': key}
-            count = db.execute('SELECT COUNT(*) FROM inquiries WHERE email = ? AND created_at > ?',
-                               (payload['email'], now - 3600)).fetchone()[0]
-            if count >= 5:
-                raise HTTPException(429, 'Too many inquiries. Please try again in an hour.')
-            db.execute('INSERT INTO inquiries VALUES (?, ?, ?, ?, ?)',
-                       (key, digest, encoded, payload['email'], now))
-    except sqlite3.Error:
-        raise HTTPException(503, 'Your inquiry could not be saved. Please try again.') from None
-    return {'status': 'received', 'inquiry_id': key}
+@app.get('/api/recipes')
+def recipes():
+    return bundled('recipes.json')
+
+
+@app.get('/api/content')
+def content():
+    return bundled('content.json')
+
+
+@app.get('/api/events')
+def events():
+    return {'storage': 'local-first', 'types': ['Meal', 'Water', 'Meditation', 'Movement', 'Self-care',
+            'Weigh-in', 'Bedtime', 'Grocery', 'Meal prep', 'Reflection', 'Custom'],
+            'message': 'Personal events are stored in your browser. This endpoint supplies event types only.'}
+
+
+@app.get('/api/foods/search')
+async def food_search(q: str = Query(min_length=2, max_length=100)):
+    key = os.getenv('USDA_API_KEY')
+    if not key:
+        if os.getenv('RAILWAY_ENVIRONMENT_ID'):
+            raise HTTPException(503, 'Nutrient lookup is not configured. Bundled estimates are available.')
+        key = 'DEMO_KEY'
+    async def load():
+        data = await fetch_json('https://api.nal.usda.gov/fdc/v1/foods/search',
+                                {'api_key': key, 'query': q, 'pageSize': 8})
+        return {'source': 'USDA FoodData Central', 'foods': [{
+            'fdcId': food.get('fdcId'), 'description': food.get('description'),
+            'dataType': food.get('dataType'), 'nutrients': food.get('foodNutrients', [])
+        } for food in data.get('foods', [])]}
+    return await cached('food:' + q.lower(), load)
+
+
+async def entrez(endpoint, params):
+    global entrez_next
+    async with entrez_lock:
+        # One worker; conservatively keep requests below three per second.
+        await asyncio.sleep(max(0, entrez_next - time.monotonic()))
+        entrez_next = time.monotonic() + 0.4
+        values = {'retmode': 'json', 'tool': 'HealthUp', **params}
+        if os.getenv('NCBI_EMAIL'):
+            values['email'] = os.environ['NCBI_EMAIL']
+        if os.getenv('NCBI_API_KEY'):
+            values['api_key'] = os.environ['NCBI_API_KEY']
+        return await fetch_json('https://eutils.ncbi.nlm.nih.gov/entrez/eutils/' + endpoint, values)
+
+
+@app.get('/api/research')
+async def research(q: str = Query(min_length=2, max_length=150)):
+    async def load():
+        found = await entrez('esearch.fcgi', {'db': 'pubmed', 'term': q, 'retmax': 6, 'sort': 'relevance'})
+        ids = found.get('esearchresult', {}).get('idlist', [])
+        if not ids:
+            return {'source': 'PubMed', 'papers': []}
+        result = await entrez('esummary.fcgi', {'db': 'pubmed', 'id': ','.join(ids)})
+        metadata = result.get('result', {})
+        papers = []
+        for pmid in ids:
+            entry = metadata.get(pmid, {})
+            doi = next((i['value'] for i in entry.get('articleids', []) if i.get('idtype') == 'doi'), None)
+            papers.append({'pmid': pmid, 'title': entry.get('title', ''),
+                           'authors': [a['name'] for a in entry.get('authors', [])],
+                           'journal': entry.get('fulljournalname', ''), 'year': entry.get('pubdate', ''),
+                           'doi': doi, 'url': f'https://pubmed.ncbi.nlm.nih.gov/{pmid}/'})
+        return {'source': 'PubMed', 'papers': papers}
+    return await cached('research:' + q.lower(), load)
+
+
+@app.exception_handler(404)
+async def missing(request, error):
+    return JSONResponse({'detail': 'This resource was not found. HealthUp local tools remain available.'}, 404)
+
+static = ROOT.parent / 'dist'
+if static.is_dir():
+    app.mount('/', StaticFiles(directory=static, html=True), name='frontend')

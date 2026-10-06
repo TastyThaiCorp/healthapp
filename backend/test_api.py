@@ -1,34 +1,35 @@
-import os
-import sqlite3
-import tempfile
+import asyncio
+import sys
 from pathlib import Path
-from uuid import uuid4
+sys.path.insert(0,str(Path(__file__).parent))
 from fastapi.testclient import TestClient
+import main
 
-os.environ['DATABASE_PATH'] = str(Path(tempfile.mkdtemp()) / 'inquiries.sqlite3')
-os.environ['ALLOWED_ORIGINS'] = 'https://tastythaicorp.github.io'
-from main import app, DB_PATH
-
-with TestClient(app) as client:
-    origin={'Origin':'https://tastythaicorp.github.io'}
-    payload={'name':'Alex','email':'alex@example.com','brief':'A meaningful developer collaboration.','request_id':str(uuid4())}
-    assert client.get('/health').status_code==200
-    r=client.post('/api/integrate',json=payload,headers=origin)
-    assert r.status_code==201,r.text
-    assert r.json()['inquiry_id']==payload['request_id']
-    assert client.post('/api/integrate',json=payload,headers=origin).status_code==201
-    with sqlite3.connect(DB_PATH) as db:
-        assert db.execute('SELECT COUNT(*) FROM inquiries').fetchone()[0]==1
-    assert client.post('/api/integrate',json={**payload,'brief':'Changed content for the same request.'},headers=origin).status_code==409
-    assert client.post('/api/integrate',json={**payload,'email':'invalid','request_id':str(uuid4())},headers=origin).status_code==422
-    assert client.post('/api/integrate',json=payload,headers={'Origin':'https://untrusted.example'}).status_code==403
-    preflight=client.options('/api/integrate',headers={**origin,'Access-Control-Request-Method':'POST','Access-Control-Request-Headers':'content-type'})
+with TestClient(main.app) as client:
+    assert client.get('/api/health').json()=={'status':'ok','product':'HealthUp'}
+    assert len(client.get('/api/recipes').json()['recipes'])==100
+    assert client.get('/api/events').json()['storage']=='local-first'
+    assert client.get('/api/content').json()['product']=='HealthUp'
+    assert client.get('/api/foods/search?q=a').status_code==422
+    preflight=client.options('/api/research',headers={'Origin':'https://tastythaicorp.github.io','Access-Control-Request-Method':'GET'})
     assert preflight.status_code==200
-    assert preflight.headers['access-control-allow-origin']==origin['Origin']
-    assert client.post('/api/integrate',content='x'*17000,headers={'Content-Type':'application/json'}).status_code==413
-    assert client.post('/api/integrate',json={**payload,'website':'spam','request_id':str(uuid4())}).status_code==422
-    for _ in range(4):
-        assert client.post('/api/integrate',json={**payload,'request_id':str(uuid4())}).status_code==201
-    assert client.post('/api/integrate',json={**payload,'request_id':str(uuid4())}).status_code==429
-    assert client.get('/index.html').status_code==404
-print('PASS: persistent save, idempotent retries, validation, origin enforcement, CORS, body limit, honeypot, rate limit, API-only hosting')
+    assert preflight.headers['access-control-allow-origin']=='https://tastythaicorp.github.io'
+    async def fail(*args,**kwargs):
+        raise main.HTTPException(503,'Service unavailable')
+    original=main.fetch_json
+    main.fetch_json=fail
+    assert client.get('/api/foods/search?q=test-failure').status_code==503
+    assert client.get('/api/research?q=test-failure').status_code==503
+    async def fixture(url,params):
+        if 'esearch' in url:
+            return {'esearchresult':{'idlist':['40301581']}}
+        return {'result':{'40301581':{'title':'Fixture title','authors':[{'name':'Test author'}],
+            'fulljournalname':'Test journal','pubdate':'2025','articleids':[{'idtype':'doi','value':'10.test/fixture'}]}}}
+    main.fetch_json=fixture
+    result=client.get('/api/research?q=fixture').json()['papers'][0]
+    assert result['pmid']=='40301581'
+    assert result['doi']=='10.test/fixture'
+    assert result['url']=='https://pubmed.ncbi.nlm.nih.gov/40301581/'
+    main.fetch_json=original
+    assert client.get('/api/missing').status_code==404
+print('PASS: health, 100 recipes, public content, local-only events, query validation, CORS, API failures, real metadata mapping, 404')

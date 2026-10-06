@@ -1,0 +1,8 @@
+import {useEffect,useRef,type ReactNode} from 'react';
+import {X,ArrowUpRight} from 'lucide-react';
+export function Logo({small=false}:{small?:boolean}){return <span className={`brand ${small?'small':''}`}><img src={`${import.meta.env.BASE_URL}assets/healthup-logo.png`} alt="HealthUp heart and upward arrow"/><span>HealthUp<small>BALANCE, BY NATURE</small></span></span>}
+export function Modal({title,onClose,children}:{title:string;onClose:()=>void;children:ReactNode}){const ref=useRef<HTMLDialogElement>(null);useEffect(()=>{const dialog=ref.current;dialog?.showModal();return()=>{dialog?.close()}},[]);return <dialog ref={ref} onCancel={onClose} onClick={e=>{if(e.target===ref.current)onClose()}} aria-labelledby="dialog-title"><div className="modal-header"><h2 id="dialog-title">{title}</h2><button className="icon-button" aria-label="Close dialog" onClick={onClose}><X size={20}/></button></div>{children}</dialog>}
+export function Heading({eyebrow,title,italic,children}:{eyebrow:string;title:string;italic?:string;children?:ReactNode}){return <div className="page-heading"><span className="eyebrow">{eyebrow}</span><h1>{title} {italic&&<em>{italic}</em>}</h1>{children}</div>}
+export function Pill({children,onClick,active=false}:{children:ReactNode;onClick:()=>void;active?:boolean}){return <button className={`pill ${active?'active':''}`} aria-pressed={active} onClick={onClick}>{children}</button>}
+export function Button({children,onClick,secondary=false}:{children:ReactNode;onClick?:()=>void;secondary?:boolean}){return <button className={`button ${secondary?'secondary':''}`} onClick={onClick}>{children}<ArrowUpRight size={16}/></button>}
+export function Empty({children}:{children:ReactNode}){return <div className="empty">{children}</div>}
