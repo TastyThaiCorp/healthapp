@@ -1,4 +1,4 @@
-const CACHE='healthup-wellness-v3';
+const CACHE='healthup-organic-ascent-v4';
 const base=new URL('./',self.location).href;
 const core=['','index.html','recipes.json','content.json','manifest.webmanifest','assets/healthup-logo.png','assets/icon.svg','assets/icon-192.png','assets/icon-512.png','assets/natural-atlas.png'];
 self.addEventListener('install',event=>event.waitUntil((async()=>{const cache=await caches.open(CACHE);const response=await fetch(base+'index.html',{cache:'reload'});if(!response.ok)throw new Error('Shell unavailable');const html=await response.text();const assets=[...html.matchAll(/(?:src|href)="([^"]+)"/g)].map(match=>new URL(match[1],base).href).filter(url=>url.startsWith(base)&&/\.(js|css)(\?|$)/.test(url));await cache.addAll([...core.map(path=>base+path),...assets]);await self.skipWaiting()})()));

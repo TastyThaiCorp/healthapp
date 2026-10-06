@@ -41,7 +41,7 @@ No database or persistent volume is required for the core release: personal heal
 Railway Serverless is a platform setting, not a FastAPI feature. Enable and redeploy if desired; cold starts can add latency. No polling or keep-alive traffic is sent by the frontend to prevent sleep. Budget/costs depend on platform plans and usage.
 
 ## Offline, privacy, and limits
-The service worker pre-caches the shell, generated bundle, 100 recipes, local content, original logo, icons, and nature art. Open the app online once before using it offline. Local logs survive refresh and offline use in IndexedDB. Browser storage can be cleared or evicted; export backups. Local data is not an encrypted medical record system.
+The service worker pre-caches the shell, generated bundle, 100 recipes, local content, Organic Ascent logo, icons, and nature art. Open the app online once before using it offline. Local logs survive refresh and offline use in IndexedDB. Browser storage can be cleared or evicted; export backups. Local data is not an encrypted medical record system.
 
 Browser-native notifications require permission and a supported device. Reminders reliably run only while the app is open; closed-app scheduling is not promised. The app offers in-app reminders if native notifications are unavailable. App installation depends on browser support. Optional external fonts may fall back offline.
 
@@ -49,3 +49,6 @@ No clinical assessments, treatment claims, AI therapy, fabricated testimonials, 
 
 ## Verification
 `npm test`, `npm run build`, and `python backend/test_api.py` (with backend requirements installed) cover content, calculations, reminders/recurrence, health routes, metadata mapping, and failure handling. Browser E2E covers actual logging, recipe search/swaps/favorites/prep, journey, calendar CRUD, timers, notifications, local persistence, puzzles/quizzes, keyboard dialogs, mobile layouts, reduced motion, and offline startup.
+
+## Brand
+The selected Organic Ascent logo uses ivory lettering with sage leaves and a soft aqua upward arrow. One shared Logo component is used in landing and app navigation, loading, onboarding, installation guidance, and both footers. App icons derive from the same mark. Sage and aqua accents carry through controls and cards while retaining the bamboo and dark wood aesthetic.
