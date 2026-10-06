@@ -17,7 +17,7 @@ RUN --mount=type=secret,id=system_ca \
     if [ -f /run/secrets/system_ca ]; then export PIP_CERT=/run/secrets/system_ca; fi; pip install --no-cache-dir -r requirements.txt
 COPY backend ./backend
 COPY --from=frontend /build/dist ./dist
-RUN useradd --uid 10001 --create-home healthup && mkdir -p /data && chown healthup:healthup /data
+RUN chmod -R a+rX /app && useradd --uid 10001 --create-home healthup && mkdir -p /data && chown healthup:healthup /data
 USER 10001:10001
 EXPOSE 8080
 CMD ["sh", "-c", "exec uvicorn backend.main:app --host 0.0.0.0 --port ${PORT:-8080} --workers 1 --no-access-log"]
